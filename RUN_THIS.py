@@ -20,3 +20,4 @@ if version.major < 3 or (version.major == 3 and version.minor < 5):
     sys.exit(1)
 
 subprocess.run([sys.executable, "git_helper.py"], cwd="BuildChecker")
+
