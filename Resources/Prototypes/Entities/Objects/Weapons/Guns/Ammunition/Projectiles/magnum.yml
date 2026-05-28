@@ -47,7 +47,10 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 35
+        Piercing: 70
+  - type: StaminaDamageOnCollide
+    damage: 70
+
 
 - type: entity
   id: BulletMagnumPractice
@@ -69,8 +72,11 @@
   - type: Projectile
     damage:
       types:
-        Blunt: 7
-        Heat: 10 # Orion-Edit: 7 > 10
+        Blunt: 14
+        Heat: 20 # Orion-Edit: 7 > 10
+  - type: StaminaDamageOnCollide
+    damage: 34
+
 
 - type: entity
   id: BulletMagnumAP
@@ -81,8 +87,11 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 28 # Goobstation edit
+        Piercing: 56 
       armorPenetration: 0.75 # Goobstation
+  - type: StaminaDamageOnCollide
+    damage: 56
+
 
 - type: entity
   id: BulletMagnumUranium
@@ -93,6 +102,8 @@
   - type: Projectile
     damage:
       types: 
-        Radiation: 10 # Orion-Edit: 15 > 10
-        Piercing: 20
+        Radiation: 20 # Orion-Edit: 15 > 10
+        Piercing: 40
       armorPenetration: 0.25 # Orion
+  - type: StaminaDamageOnCollide
+    damage: 60

@@ -35,8 +35,10 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 25 # Goobstation edit
+        Piercing: 50 
       armorPenetration: -0.3 # Goobstation
+  - type: StaminaDamageOnCollide
+    damage: 50
 
 - type: entity
   id: BulletCaselessRiflePractice

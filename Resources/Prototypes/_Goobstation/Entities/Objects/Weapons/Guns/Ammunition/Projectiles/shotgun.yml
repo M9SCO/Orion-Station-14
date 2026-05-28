@@ -25,8 +25,11 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 15
+        Piercing: 30
         Structural: 20
+  - type: StaminaDamageOnCollide # Orion
+    damage: 30
+
 
 - type: entity
   id: HighCaliberPelletShotgunSpread
@@ -52,8 +55,8 @@
     - type: Projectile
       damage:
         types:
-          Blunt: 6
-          Heat: 6
+          Blunt: 12
+          Heat: 12
     - type: IgnitionSource
       ignited: true
 
@@ -81,7 +84,7 @@
     - type: Projectile
       damage:
         types:
-          Blunt: 2
+          Blunt: 4
     - type: StaminaDamageOnCollide # Orion
       damage: 4
 
@@ -109,8 +112,11 @@
     - type: Projectile
       damage:
         types:
-          Radiation: 8
-          Piercing: 8
+          Radiation: 16
+          Piercing: 16
+    - type: StaminaDamageOnCollide # Orion
+      damage: 32
+
 
 - type: entity
   id: HighCaliberPelletShotgunUraniumSpread
@@ -136,8 +142,11 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 65
+        Piercing: 130
         Structural: 25 # Orion
+  - type: StaminaDamageOnCollide # Orion
+    damage: 130
+
 
 - type: entity
   id: BulletSlugEnsnaring
@@ -153,7 +162,7 @@
     deleteOnCollide: false
     damage:
       types:
-        Piercing: 16 #Low damage, but ensnaring
+        Piercing: 32 #Low damage, but ensnaring
   - type: Ensnaring
     canThrowTrigger: true
     destroyOnRemove: true
@@ -161,7 +170,7 @@
     freeTime: 3
     sprintSpeed: 0.6
     walkSpeed: 0.6
-    staminaDamage: 30 # Orion-Edit: 10 > 30
+    staminaDamage: 32 # Orion-Edit: 10 > 30
 
 - type: entity
   id: BulletSlugEMP
@@ -187,8 +196,11 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 12
-        Ion: 20
+        Piercing: 24
+        Ion: 40
+  - type: StaminaDamageOnCollide # Orion
+    damage: 64
+
 
 - type: entity
   id: BulletSlugFlash
@@ -215,7 +227,10 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 20
+        Piercing: 40
+  - type: StaminaDamageOnCollide # Orion
+    damage: 40
+
 
 - type: entity
   id: BulletSlugBeanbagHighCaliber
@@ -231,7 +246,7 @@
       types:
         Blunt: 20 # ye-OUCH
   - type: StaminaDamageOnCollide
-    damage: 80 # ye-OW
+    damage: 160 # ye-OW
 
 - type: entity
   id: BulletShotgunHeavySlugSarin
@@ -253,7 +268,10 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 15
+        Piercing: 30
+  - type: StaminaDamageOnCollide # Orion
+    damage: 30
+
 
 # Heavy shotgun
 
@@ -270,7 +288,10 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 7
+        Piercing: 14
+  - type: StaminaDamageOnCollide # Orion
+    damage: 14
+
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: HardBomb # Boom
@@ -319,10 +340,10 @@
     deleteOnCollide: false # ScatteringGrenade manages deletion
     damage:
       types:
-        Piercing: 30
+        Piercing: 60
       armorPenetration: 0.5
   - type: StaminaDamageOnCollide
-    damage: 40
+    damage: 60
   - type: ContainerContainer
     containers:
       cluster-payload: !type:Container
@@ -350,7 +371,10 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 6 # Total 120 damage
+        Piercing: 12 # Total 240 damage
+  - type: StaminaDamageOnCollide # Orion
+    damage: 12
+
 
 - type: entity
   id: HighCaliberPelletGrenadeSpread

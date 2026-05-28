@@ -7,8 +7,11 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 24
+        Piercing: 48
       armorPenetration: 0.25
+  - type: StaminaDamageOnCollide
+    damage: 48
+
 
 - type: entity
   parent: BaseBulletPractice
@@ -31,9 +34,12 @@
   - type: Projectile
     damage:
       types:
-        Blunt: 7
-        Heat: 8
+        Blunt: 14
+        Heat: 16
       armorPenetration: 0.2
+  - type: StaminaDamageOnCollide
+    damage: 30
+
 
 - type: entity
   parent: BaseBulletUranium
@@ -44,6 +50,9 @@
   - type: Projectile
     damage:
       types:
-        Radiation: 7
-        Piercing: 13
+        Radiation: 14
+        Piercing: 26
       armorPenetration: 0.4
+  - type: StaminaDamageOnCollide
+    damage: 40
+
