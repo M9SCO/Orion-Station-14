@@ -25,10 +25,10 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 30
+        Piercing: 30 # Siberia edit
         Structural: 20
   - type: StaminaDamageOnCollide # Orion
-    damage: 30
+    damage: 30 # Siberia edit
 
 
 - type: entity
@@ -55,8 +55,8 @@
     - type: Projectile
       damage:
         types:
-          Blunt: 12
-          Heat: 12
+          Blunt: 12 # Siberia edit
+          Heat: 12 # Siberia edit
     - type: IgnitionSource
       ignited: true
 
@@ -84,9 +84,9 @@
     - type: Projectile
       damage:
         types:
-          Blunt: 4
+          Blunt: 4 # Siberia edit
     - type: StaminaDamageOnCollide # Orion
-      damage: 4
+      damage: 4 # Siberia edit
 
 - type: entity
   id: HighCaliberPelletShotgunPracticeSpread
@@ -112,10 +112,10 @@
     - type: Projectile
       damage:
         types:
-          Radiation: 16
-          Piercing: 16
+          Radiation: 16 # Siberia edit
+          Piercing: 16 # Siberia edit
     - type: StaminaDamageOnCollide # Orion
-      damage: 32
+      damage: 32 # Siberia edit
 
 
 - type: entity
@@ -142,10 +142,10 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 130
+        Piercing: 130 # Siberia edit
         Structural: 25 # Orion
   - type: StaminaDamageOnCollide # Orion
-    damage: 130
+    damage: 130 # Siberia edit
 
 
 - type: entity
@@ -162,7 +162,7 @@
     deleteOnCollide: false
     damage:
       types:
-        Piercing: 32 #Low damage, but ensnaring
+        Piercing: 32 # Siberia edit
   - type: Ensnaring
     canThrowTrigger: true
     destroyOnRemove: true
@@ -170,7 +170,7 @@
     freeTime: 3
     sprintSpeed: 0.6
     walkSpeed: 0.6
-    staminaDamage: 32 # Orion-Edit: 10 > 30
+    staminaDamage: 32 # Siberia edit
 
 - type: entity
   id: BulletSlugEMP
@@ -196,10 +196,10 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 24
-        Ion: 40
+        Piercing: 24 # Siberia edit
+        Ion: 40 # Siberia edit
   - type: StaminaDamageOnCollide # Orion
-    damage: 64
+    damage: 64 # Siberia edit
 
 
 - type: entity
@@ -227,9 +227,9 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 40
+        Piercing: 40 # Siberia edit
   - type: StaminaDamageOnCollide # Orion
-    damage: 40
+    damage: 40 # Siberia edit
 
 
 - type: entity
@@ -244,9 +244,9 @@
   - type: Projectile
     damage:
       types:
-        Blunt: 20 # ye-OUCH
+        Blunt: 40 # Siberia edit
   - type: StaminaDamageOnCollide
-    damage: 160 # ye-OW
+    damage: 160 # Siberia edit
 
 - type: entity
   id: BulletShotgunHeavySlugSarin
@@ -268,9 +268,9 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 30
+        Piercing: 30 # Siberia edit
   - type: StaminaDamageOnCollide # Orion
-    damage: 30
+    damage: 30 # Siberia edit
 
 
 # Heavy shotgun
@@ -288,9 +288,9 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 14
+        Piercing: 14 # Siberia edit
   - type: StaminaDamageOnCollide # Orion
-    damage: 14
+    damage: 14 # Siberia edit
 
   - type: ExplodeOnTrigger
   - type: Explosive
@@ -340,10 +340,10 @@
     deleteOnCollide: false # ScatteringGrenade manages deletion
     damage:
       types:
-        Piercing: 60
+        Piercing: 60 # Siberia edit
       armorPenetration: 0.5
   - type: StaminaDamageOnCollide
-    damage: 60
+    damage: 60 # Siberia edit
   - type: ContainerContainer
     containers:
       cluster-payload: !type:Container
@@ -371,9 +371,9 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 12 # Total 240 damage
+        Piercing: 12 # Siberia edit
   - type: StaminaDamageOnCollide # Orion
-    damage: 12
+    damage: 12 # Siberia edit
 
 
 - type: entity

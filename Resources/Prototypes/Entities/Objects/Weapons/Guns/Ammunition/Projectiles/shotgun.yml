@@ -121,10 +121,10 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 90 # Orion-Edit: 40 > 45
+        Piercing: 90 # Siberia edit
         Structural: 20 # Orion-Edit: 15 > 20
   - type: StaminaDamageOnCollide
-    damage: 90
+    damage: 90 # Siberia edit
 
 
 
@@ -140,7 +140,7 @@
   - type: Projectile
     damage:
       types:
-        Blunt: 20
+        Blunt: 20 # Siberia edit
   - type: StaminaDamageOnCollide
     damage: 60 # Goob edit
 
@@ -156,11 +156,11 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 20
-        Structural: 30
+        Piercing: 20 # Siberia edit
+        Structural: 30 # Siberia edit
       armorPenetration: -0.1 # Orion
   - type: StaminaDamageOnCollide
-    damage: 25
+    damage: 25 # Siberia edit
 
 
 
@@ -186,13 +186,13 @@
   - type: Projectile
     damage:
       types:
-        Blunt: 8 # Orion-Edit: 3 > 4
-        Heat: 12 # Orion-Edit: 3 > 6
+        Blunt: 8 # Siberia edit
+        Heat: 12 # Siberia edit
       armorPenetration: -0.1 # Orion
   - type: IgnitionSource
     ignited: true
   - type: StaminaDamageOnCollide
-    damage: 20
+    damage: 20 # Siberia edit
 
 
 - type: entity
@@ -241,10 +241,10 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 6
-        Slash: 6
+        Piercing: 6 # Siberia edit
+        Slash: 6 # Siberia edit
   - type: StaminaDamageOnCollide # Orion
-    damage: 12
+    damage: 12 # Siberia edit
 
 - type: entity
   id: PelletShotgunImprovisedSpread
@@ -342,11 +342,11 @@
   - type: Projectile
     damage:
       types:
-        Radiation: 4 # Orion-Edit: 5 > 2
-        Piercing: 10
+        Radiation: 4 # Siberia edit
+        Piercing: 10 # Siberia edit
       armorPenetration: 0.15 # Orion
   - type: StaminaDamageOnCollide
-    damage: 14
+    damage: 14 # Siberia edit
 
 
 - type: entity
@@ -374,10 +374,10 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 50
+        Piercing: 50 # Siberia edit
         Structural: 5
   - type: StaminaDamageOnCollide
-    damage: 50
+    damage: 50 # Siberia edit
 
 
 - type: entity
@@ -408,9 +408,9 @@
     deleteOnCollide: false
     damage:
       types:
-        Slash: 50
+        Slash: 50 # Siberia edit
   - type: StaminaDamageOnCollide
-    damage: 50
+    damage: 50 # Siberia edit
 
 
 - type: entity

@@ -39,7 +39,7 @@
     impactEffect: BulletImpactEffectOrangeDisabler
     damage:
       types:
-        Blunt: 10
+        Blunt: 10 # Siberia edit
   - type: ProjectileRequireWhitelist
     whitelist:
      components:
@@ -80,7 +80,7 @@
     impactEffect: BulletImpactEffectDisabler
     damage:
       types:
-        Blunt: 10
+        Blunt: 10 # Siberia edit
   - type: ProjectileThrowOnHit
     distance: 4
     speed: 8
@@ -154,10 +154,10 @@
     impactEffect: BulletImpactEffectOrangeDisabler
     damage:
       types:
-        Heat: 34
-        Radiation: 4
+        Heat: 34 # Siberia edit
+        Radiation: 4 # Siberia edit
   - type: StaminaDamageOnCollide
-    damage: 38
+    damage: 38 # Siberia edit
 
 
 - type: entity
@@ -197,7 +197,7 @@
   - type: IgniteOnCollide
     fireStacks: 2
   - type: StaminaDamageOnCollide
-    damage: 8
+    damage: 8 # Siberia edit
 
 
 - type: entity
@@ -273,10 +273,10 @@
     impactEffect: BulletImpactEffectKinetic
     damage:
       types:
-        Blunt: 4
-        Heat: 4
+        Blunt: 4 # Siberia edit
+        Heat: 4 # Siberia edit
         Structural: 100
     ignoreResistances: true # This needs ProjectileDamageWhitelistComponent
   - type: StaminaDamageOnCollide
-    damage: 8
+    damage: 8 # Siberia edit
 

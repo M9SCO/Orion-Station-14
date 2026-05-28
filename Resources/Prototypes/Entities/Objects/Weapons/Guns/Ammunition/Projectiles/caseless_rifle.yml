@@ -35,9 +35,9 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 50 
+        Piercing: 50 # Siberia edit
       armorPenetration: -0.3 # Goobstation
-  - type: StaminaDamageOnCollide
+  - type: StaminaDamageOnCollide # Siberia edit
     damage: 50
 
 - type: entity

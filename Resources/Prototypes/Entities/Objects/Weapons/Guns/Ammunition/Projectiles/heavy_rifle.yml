@@ -22,8 +22,8 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 38
-  - type: StaminaDamageOnCollide
+        Piercing: 38 # Siberia edit
+  - type: StaminaDamageOnCollide # Siberia edit
     damage: 38
 
 
@@ -36,7 +36,7 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 12 # Orion-Edit: 5 > 6
+        Piercing: 12 # Siberia edit
   - type: StaminaDamageOnCollide
-    damage: 12
+    damage: 12 # Siberia edit
 
