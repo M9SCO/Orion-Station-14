@@ -7,7 +7,7 @@
     - type: Vehicle
       renderOver: North, East, South, West
     - type: Sprite
-      sprite: _Siberia/Vixen/KitsuneArms/mora_12.rsi
+      sprite: _Siberia/Vehicle/mora_12.rsi
       state: vehicle
       noRot: true
     - type: MovementSpeedModifier
@@ -46,7 +46,7 @@
   description:  Ключ от грави-байка Мора-12, на нём весит брелок в форме лисьей мордочки.
   components:
   - type: Sprite
-    sprite: _Siberia/Vixen/KitsuneArms/mora_12.rsi
+    sprite: _Siberia/Vehicle/mora_12.rsi
     state: keys
   - type: Tag
     tags:
@@ -70,7 +70,7 @@
 - type: cargoProduct
   id: Mora12Variety
   icon:
-    sprite: _Siberia/Vixen/KitsuneArms/mora_12.rsi
+    sprite: _Siberia/Vehicle/mora_12.rsi
     state: icon
   product: CrateMora12
   cost: 12000
