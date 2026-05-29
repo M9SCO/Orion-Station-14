@@ -372,7 +372,7 @@
     damage:
       types:
         Piercing: 12 # Siberia edit
-  - type: StaminaDamageOnCollide # Orion
+  - type: StaminaDamageOnCollide # Siberia edit
     damage: 12 # Siberia edit
 
 
