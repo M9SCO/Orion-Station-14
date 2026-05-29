@@ -1,0 +1,17 @@
+- type: marking
+  id: FoxTail
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Human, Felinid, Vulpkanin, SlimePerson]
+  sponsorOnly: true # Corvax-Sponsors
+  sprites:
+    - sprite: Siberia/Clothing/foxtail.rsi
+      state: equipped-NECKindexbrown
+    - sprite: Siberia/Clothing/foxtail.rsi
+      state: equipped-NECKindexorange
+    - sprite: Siberia/Clothing/foxtail.rsi
+      state: equipped-NECKindexcarrot
+    - sprite: Siberia/Clothing/foxtail.rsi
+      state: equipped-NECKindexwhite
+    # - sprite: Clothing/Neck/Misc/foxtail.rsi
+      # state: equipped-NECKindexorangecarrot
