@@ -10,26 +10,6 @@
 
 - type: entity
   parent: BaseFlag
-  id: FlagBelarus
-  name: сцяг Беларусі
-  description: Сцяг некалі самай лепшай дзяржавы на планеце з наймацнейшым лідэрам, вядомым як Дужы Арэшак.
-  components:
-  - type: Sprite
-    sprite: _Orion/Structures/Wallmounts/flags.rsi
-    state: belarus
-
-- type: entity
-  parent: BaseFlag
-  id: FlagChechnya
-  name: Chechnya flag
-  description: Cool!!!
-  components:
-  - type: Sprite
-    sprite: _Orion/Structures/Wallmounts/flags.rsi
-    state: chechnya
-
-- type: entity
-  parent: BaseFlag
   id: FlagCoder
   name: coder flag
   description: The flag of the nerd club. Great.
@@ -37,16 +17,6 @@
   - type: Sprite
     sprite: _Orion/Structures/Wallmounts/flags.rsi
     state: coder
-
-- type: entity
-  parent: BaseFlag
-  id: FlagGermany
-  name: Germany flag
-  description: Die Flagge eines einst aufstrebenden Staates, der heute irgendwo in der Geschichte verloren ist. Aus irgendeinem Grund riecht sie nach Asche...
-  components:
-  - type: Sprite
-    sprite: _Orion/Structures/Wallmounts/flags.rsi
-    state: germany
 
 - type: entity
   parent: BaseFlag
@@ -150,16 +120,6 @@
 
 - type: entity
   parent: BaseFlag
-  id: FlagRussian
-  name: флаг Российской Федерации
-  description: Флаг некогда великого Государства, обладающего огромными землями, возможностями, а также огромным Советским Наследством.
-  components:
-  - type: Sprite
-    sprite: _Orion/Structures/Wallmounts/flags.rsi
-    state: russian
-
-- type: entity
-  parent: BaseFlag
   id: FlagShigu
   name: Shigu Empire flag
   description: This is the flag of the Shigu Empire. The Shigu Empire was once just an association of northern tribes that feared and revered wildlife. However, with the arrival of General Rain, Shigu became the largest empire, which seized a huge amount of land, but returned some of it when her son ascended to the throne.
@@ -215,26 +175,6 @@
   - type: Sprite
     sprite: _Orion/Structures/Wallmounts/flags.rsi
     state: tizira
-
-- type: entity
-  parent: BaseFlag
-  id: FlagUkraine
-  name: Ukraine flag
-  description: Прапор колись особливо героїчної держави, яку було загублено в попелищі Земної Історії...
-  components:
-  - type: Sprite
-    sprite: _Orion/Structures/Wallmounts/flags.rsi
-    state: ukraine
-
-- type: entity
-  parent: BaseFlag
-  id: FlagUSA
-  name: United States of America flag
-  description: Stars and Stripes, the flag of the United States of America. Its red color represents endurance and valor; blue one shows diligence, vigilance and justice, and the white one signs at pureness. Its thirteen red-and-white stripes show the initial thirteen founding colonies, and fifty stars designate fifty states.
-  components:
-  - type: Sprite
-    sprite: _Orion/Structures/Wallmounts/flags.rsi
-    state: usa
 
 - type: entity
   parent: BaseFlag
