@@ -23,6 +23,9 @@
     belt: ClothingBeltStorageWaistbag
     shoes: ClothingShoesColorBlack
     id: RadioHostPDA
+  storage:
+    back:
+    - BoxTapeRecorder
 
 - type: chameleonOutfit
   id: RadioHostChameleonOutfit
