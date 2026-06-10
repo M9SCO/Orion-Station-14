@@ -3,9 +3,9 @@
 - type: entity
   parent: VendingMachine
   id: VendingMachineUnder
-  name: НижнеМат
+  name: UnderMat
   suffix: Siberia
-  description: Нажми на кнопку — получишь результат...
+  description: Press the button - get the result...
   components:
   - type: VendingMachine
     pack: UnderMateInventory

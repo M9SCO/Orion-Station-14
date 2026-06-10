@@ -13,6 +13,10 @@
         {
             "name": "equipped-UNDERSHIRT",
             "directions": 4
+        },
+        {
+            "name": "equipped-TOP",
+            "directions": 4
         }
     ]
 }

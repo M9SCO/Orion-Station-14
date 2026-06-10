@@ -3,7 +3,7 @@
 - type: entity
   parent: ClothingUnderwearBase
   id: ClothingUnderBottomWhiteU
-  name: Белые унисекс трусы
+  name: White Unisex Underwear
   description: Mr White!
   components:
   - type: Sprite
@@ -15,8 +15,8 @@
 - type: entity
   parent: ClothingUnderwearBase
   id: ClothingUnderBottomGalaxy
-  name: Нижнее бельё Galaxy
-  description: Бельё с галактическим принтом.
+  name: Galaxy Underwear
+  description: Galaxy-themed underwear.
   components:
   - type: Sprite
     sprite: _Siberia/Clothing/Under/Bottom/Female/galaxy.rsi
@@ -28,8 +28,8 @@
 - type: entity
   parent: ClothingUnderwearBase
   id: ClothingUnderBottomNeko
-  name: Чёрные неко трусики
-  description: Чёрные трусики в стиле неко.
+  name: Black Neko Panties
+  description: Black neko-themed panties.
   components:
   - type: Sprite
     sprite: _Siberia/Clothing/Under/Bottom/Female/neko.rsi
@@ -41,8 +41,8 @@
 - type: entity
   parent: ClothingUnderwearBase
   id: ClothingUnderBottomSchool
-  name: Школьные трусики
-  description: Трусики школьного фасона.
+  name: School Panties
+  description: School-style panties.
   components:
   - type: Sprite
     sprite: _Siberia/Clothing/Under/Bottom/Female/school.rsi
@@ -54,8 +54,8 @@
 - type: entity
   parent: ClothingUnderwearBase
   id: ClothingUnderBottomTactic
-  name: Тёмные трусики
-  description: Тёмные трусики.
+  name: Dark Panties
+  description: Dark-colored panties.
   components:
   - type: Sprite
     sprite: _Siberia/Clothing/Under/Bottom/Female/tacticbottom.rsi
@@ -67,8 +67,8 @@
 - type: entity
   parent: ClothingUnderwearBase
   id: ClothingUnderBottomSyndicate
-  name: Тактические трусики
-  description: Трусики в тактическом стиле.
+  name: Tactical Panties
+  description: Tactical-style panties.
   components:
   - type: Sprite
     sprite: _Siberia/Clothing/Under/Bottom/Female/lacebottom.rsi
@@ -80,8 +80,8 @@
 - type: entity
   parent: ClothingUnderwearBase
   id: ClothingUnderBottomHos
-  name: Трусы службы безопасности
-  description: Трусы службы безопасности.
+  name: Security Underwear
+  description: Security department underwear.
   components:
   - type: Sprite
     sprite: _Siberia/Clothing/Under/Bottom/Male/HOS.rsi
@@ -93,8 +93,8 @@
 - type: entity
   parent: ClothingUnderwearBase
   id: ClothingUnderBottomTiger
-  name: Тигриные трусы
-  description: Трусы с тигриным принтом.
+  name: Tiger Underwear
+  description: Tiger-print underwear.
   components:
   - type: Sprite
     sprite: _Siberia/Clothing/Under/Bottom/Female/tiger.rsi
@@ -106,8 +106,8 @@
 - type: entity
   parent: ClothingUnderwearBase
   id: ClothingUnderBottomBatya
-  name: Батины труханы
-  description: Поношенные батины труханы.
+  name: Dad's Underpants
+  description: Well-worn dad underpants.
   components:
   - type: Sprite
     sprite: _Siberia/Clothing/Under/Bottom/Male/batya.rsi
@@ -118,8 +118,8 @@
 - type: entity
   parent: ClothingUnderwearBase
   id: ClothingUnderBottomFlower
-  name: Зелёные трусы с цветочками
-  description: Зелёные трусы с принтом цветочков.
+  name: Green Flower Underwear
+  description: Green underwear with flower print.
   components:
   - type: Sprite
     sprite: _Siberia/Clothing/Under/Bottom/Male/flower.rsi
@@ -130,8 +130,8 @@
 - type: entity
   parent: ClothingUnderwearBase
   id: ClothingUnderBottomPinkMan
-  name: Розовые мужские трусы
-  description: Розовые мужские трусы.
+  name: Pink Men's Underwear
+  description: Pink men's underwear.
   components:
   - type: Sprite
     sprite: _Siberia/Clothing/Under/Bottom/Male/pink.rsi
@@ -142,8 +142,8 @@
 - type: entity
   parent: ClothingUnderwearBase
   id: ClothingUnderBottomPantaloons
-  name: Панталоны
-  description: Старомодные панталоны.
+  name: Pantaloons
+  description: Old-fashioned pantaloons.
   components:
   - type: Sprite
     sprite: _Siberia/Clothing/Under/Bottom/pantaloons.rsi
@@ -154,8 +154,8 @@
 - type: entity
   parent: ClothingUnderwearBase
   id: ClothingUnderBottomPink
-  name: Розовые трусики
-  description: Розовые трусики.
+  name: Pink Panties
+  description: Pink panties.
   components:
   - type: Sprite
     sprite: _Siberia/Clothing/Under/Bottom/Female/pinkD.rsi
@@ -166,8 +166,8 @@
 - type: entity
   parent: ClothingUnderwearBase
   id: ClothingUnderBottomDisco
-  name: Диско трусики
-  description: Трусики в стиле диско.
+  name: Disco Panties
+  description: Disco-style panties.
   components:
   - type: Sprite
     sprite: _Siberia/Clothing/Under/Bottom/Female/discobottom.rsi
@@ -179,8 +179,8 @@
 - type: entity
   parent: ClothingUnderwearBase
   id: ClothingUnderBottomTigerFemale
-  name: Тигриные трусики
-  description: Трусики с тигриным принтом.
+  name: Tiger Panties
+  description: Tiger-print panties.
   components:
   - type: Sprite
     sprite: _Siberia/Clothing/Under/Bottom/Female/tigerbottom.rsi
@@ -192,8 +192,8 @@
 - type: entity
   parent: ClothingUnderwearBase
   id: ClothingUnderBottomSanta
-  name: Новогодние трусики
-  description: Праздничные новогодние трусики.
+  name: Christmas Panties
+  description: Festive Christmas panties.
   components:
   - type: Sprite
     sprite: _Siberia/Clothing/Under/Bottom/Female/santabottom.rsi
@@ -205,8 +205,8 @@
 - type: entity
   parent: ClothingUnderwearBase
   id: ClothingUnderBottomBlackPanties
-  name: Чёрные унисекс-трусы
-  description: Классические чёрные унисекс-трусы.
+  name: Black Unisex Underwear
+  description: Classic black unisex underwear.
   components:
   - type: Sprite
     sprite: _Siberia/Clothing/Under/Bottom/Male/blackpanties.rsi
@@ -217,8 +217,8 @@
 - type: entity
   parent: ClothingUnderwearBase
   id: ClothingUnderBottomWhitePanties
-  name: Белые унисекс-трусы
-  description: Классические белые унисекс-трусы.
+  name: White Unisex Underwear
+  description: Classic white unisex underwear.
   components:
   - type: Sprite
     sprite: _Siberia/Clothing/Under/Bottom/Male/whitepanties.rsi
@@ -229,8 +229,8 @@
 - type: entity
   parent: ClothingUnderwearBase
   id: ClothingBottomZebra
-  name: Трусы Зебра
-  description: Стандартные трусы для Объединённой федерации мимов.
+  name: Zebra Underwear
+  description: Standard underwear for the United Federation of Mimes.
   components:
   - type: Sprite
     sprite: _Siberia/Clothing/Under/Bottom/zebra.rsi
@@ -242,8 +242,8 @@
 - type: entity
   parent: ClothingUnderwearBase
   id: ClothingBottomElephant
-  name: Трусы Слоник
-  description: Эластичные трусы со странным карманом.
+  name: Elephant Underwear
+  description: Stretchy underwear with a strange pocket.
   components:
   - type: Sprite
     sprite: _Siberia/Clothing/Under/Bottom/elephant.rsi
@@ -255,8 +255,8 @@
 - type: entity
   parent: ClothingUnderwearBase
   id: ClothingBottomLether
-  name: Кожаные трусы
-  description: Эти трусы сделаны из прочной синтетической кожи.
+  name: Leather Underwear
+  description: These underwear are made from sturdy synthetic leather.
   components:
   - type: Sprite
     sprite: _Siberia/Clothing/Under/Bottom/lether.rsi
@@ -268,8 +268,8 @@
 - type: entity
   parent: ClothingUnderwearBase
   id: ClothingBottomMice
-  name: Трусы с мышкой
-  description: На трусах красуется прекрасная мышка.
+  name: Mouse Underwear
+  description: A cute little mouse adorns these underwear.
   components:
   - type: Sprite
     sprite: _Siberia/Clothing/Under/Bottom/mice.rsi
@@ -281,8 +281,8 @@
 - type: entity
   parent: ClothingUnderwearBase
   id: ClothingBottomSailor
-  name: Трусы Моряка
-  description: Стандартные трусы с красивым принтом.
+  name: Sailor Underwear
+  description: Standard underwear with a nice print.
   components:
   - type: Sprite
     sprite: _Siberia/Clothing/Under/Bottom/sailor.rsi
@@ -294,8 +294,8 @@
 - type: entity
   parent: ClothingUnderwearBase
   id: ClothingBottomSailorSpecial
-  name: Трусы Моряка MK-2
-  description: Улучшенные стандартные трусы с красивым принтом.
+  name: Sailor Underwear MK-2
+  description: Upgraded standard underwear with a nice print.
   components:
   - type: Sprite
     sprite: _Siberia/Clothing/Under/Bottom/sailor-special.rsi
@@ -307,8 +307,8 @@
 - type: entity
   parent: ClothingUnderwearBase
   id: ClothingBlackPiquantBottom
-  name: Чёрные пикантные трусики
-  description: Фривольное бельё для тех дам, что желают порадовать своих мужчин.
+  name: Black Piquant Panties
+  description: Frivolous lingerie for those who wish to please.
   components:
   - type: Sprite
     sprite: _Siberia/Clothing/Under/Bottom/piquantbottom.rsi
@@ -339,8 +339,8 @@
 - type: entity
   parent: ClothingUnderwearBase
   id: ClothingRedPiquantBottom
-  name: Красные пикантные трусики
-  description: Фривольное бельё для тех дам, что желают порадовать своих мужчин.
+  name: Red Piquant Panties
+  description: Frivolous lingerie for those who wish to please.
   components:
   - type: Sprite
     sprite: _Siberia/Clothing/Under/Bottom/piquantbottom.rsi
@@ -371,8 +371,8 @@
 - type: entity
   parent: ClothingUnderwearBase
   id: ClothingBluePiquantBottom
-  name: Синие пикантные трусики
-  description: Фривольное бельё для тех дам, что желают порадовать своих мужчин.
+  name: Blue Piquant Panties
+  description: Frivolous lingerie for those who wish to please.
   components:
   - type: Sprite
     sprite: _Siberia/Clothing/Under/Bottom/piquantbottom.rsi
@@ -403,8 +403,8 @@
 - type: entity
   parent: ClothingUnderwearBase
   id: ClothingPurplePiquantBottom
-  name: Фиолетовые пикантные трусики
-  description: Фривольное бельё для тех дам, что желают порадовать своих мужчин.
+  name: Purple Piquant Panties
+  description: Frivolous lingerie for those who wish to please.
   components:
   - type: Sprite
     sprite: _Siberia/Clothing/Under/Bottom/piquantbottom.rsi
@@ -435,8 +435,8 @@
 - type: entity
   parent: ClothingUnderwearBase
   id: ClothingOrangePiquantBottom
-  name: Оранжевые пикантные трусики
-  description: Фривольное бельё для тех дам, что желают порадовать своих мужчин.
+  name: Orange Piquant Panties
+  description: Frivolous lingerie for those who wish to please.
   components:
   - type: Sprite
     sprite: _Siberia/Clothing/Under/Bottom/piquantbottom.rsi
@@ -467,8 +467,8 @@
 - type: entity
   parent: ClothingUnderwearBase
   id: ClothingUnderBottomKitsuneArms
-  name: Элитные трусики купальника Kitsune Arms
-  description: Лимитированное нижнее бельё от компании Kitsune Arms для лучших её клиентов.
+  name: Kitsune Arms Elite Swimsuit Bottom
+  description: Limited lingerie from Kitsune Arms for its best clients.
   components:
   - type: Sprite
     sprite: _Siberia/Clothing/Under/Bottom/kitsunearmsbottom.rsi
@@ -488,8 +488,8 @@
 - type: entity
   parent: ClothingUnderwearBase
   id: ClothingBlackElegantSwimsuitBottom
-  name: Чёрный элегантный купальник
-  description: Покажи всем красоту своего тела.
+  name: Black Elegant Swimsuit
+  description: Show everyone the beauty of your body.
   components:
   - type: Sprite
     sprite: _Siberia/Clothing/Under/Bottom/elegantswimsuitbottom.rsi
@@ -516,8 +516,8 @@
 - type: entity
   parent: ClothingUnderwearBase
   id: ClothingRedElegantSwimsuitBottom
-  name: Красный элегантный купальник
-  description: Покажи всем красоту своего тела.
+  name: Red Elegant Swimsuit
+  description: Show everyone the beauty of your body.
   components:
   - type: Sprite
     sprite: _Siberia/Clothing/Under/Bottom/elegantswimsuitbottom.rsi
@@ -544,8 +544,8 @@
 - type: entity
   parent: ClothingUnderwearBase
   id: ClothingGreenElegantSwimsuitBottom
-  name: Зелёный элегантный купальник
-  description: Покажи всем красоту своего тела.
+  name: Green Elegant Swimsuit
+  description: Show everyone the beauty of your body.
   components:
   - type: Sprite
     sprite: _Siberia/Clothing/Under/Bottom/elegantswimsuitbottom.rsi
@@ -572,8 +572,8 @@
 - type: entity
   parent: ClothingUnderwearBase
   id: ClothingBlueElegantSwimsuitBottom
-  name: Синий элегантный купальник
-  description: Покажи всем красоту своего тела.
+  name: Blue Elegant Swimsuit
+  description: Show everyone the beauty of your body.
   components:
   - type: Sprite
     sprite: _Siberia/Clothing/Under/Bottom/elegantswimsuitbottom.rsi
@@ -600,8 +600,8 @@
 - type: entity
   parent: ClothingUnderwearBase
   id: ClothingPurpleElegantSwimsuitBottom
-  name: Фиолетовый элегантный купальник
-  description: Покажи всем красоту своего тела.
+  name: Purple Elegant Swimsuit
+  description: Show everyone the beauty of your body.
   components:
   - type: Sprite
     sprite: _Siberia/Clothing/Under/Bottom/elegantswimsuitbottom.rsi
@@ -628,8 +628,8 @@
 - type: entity
   parent: ClothingUnderwearBase
   id: ClothingOrangeElegantSwimsuitBottom
-  name: Оранжевый элегантный купальник
-  description: Покажи всем красоту своего тела.
+  name: Orange Elegant Swimsuit
+  description: Show everyone the beauty of your body.
   components:
   - type: Sprite
     sprite: _Siberia/Clothing/Under/Bottom/elegantswimsuitbottom.rsi
@@ -656,8 +656,8 @@
 - type: entity
   parent: ClothingUnderwearBase
   id: ClothingUnderBottomAzure
-  name: Лазурные трусики купальника
-  description: Синева неба хорошо сочетается с морской гладью.
+  name: Azure Swimsuit Bottom
+  description: The blue of the sky pairs well with the sea.
   components:
   - type: Sprite
     sprite: _Siberia/Clothing/Under/Bottom/azurebottom.rsi

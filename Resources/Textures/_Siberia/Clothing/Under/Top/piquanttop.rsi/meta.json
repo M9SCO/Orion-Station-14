@@ -36,6 +36,14 @@
         {
             "name": "inhand-right",
             "directions": 4
+        },
+        {
+            "name": "color-equipped-INNERCLOTHING",
+            "directions": 4
+        },
+        {
+            "name": "equipped-INNERCLOTHING",
+            "directions": 4
         }
     ]
 }

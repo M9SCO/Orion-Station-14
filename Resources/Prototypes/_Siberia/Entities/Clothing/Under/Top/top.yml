@@ -3,8 +3,8 @@
 - type: entity
   parent: ClothingUndershirtBase
   id: ClothingUnderTopWhiteM
-  name: Белая мужская майка
-  description: Белая мужская майка.
+  name: White Male Tank Top
+  description: A white male tank top.
   components:
   - type: Sprite
     sprite: _Siberia/Clothing/Under/Top/whitemale.rsi
@@ -15,8 +15,8 @@
 - type: entity
   parent: ClothingUndershirtBase
   id: ClothingUnderTopWhiteF
-  name: Белый женский топ
-  description: Белый женский топик.
+  name: White Female Top
+  description: A white female top.
   components:
   - type: Sprite
     sprite: _Siberia/Clothing/Under/Top/whitefemale.rsi
@@ -27,8 +27,8 @@
 - type: entity
   parent: ClothingUndershirtBase
   id: ClothingUnderTopShirtIan
-  name: Рубашка Иана
-  description: Люби меня, ууууф!
+  name: Ian's Shirt
+  description: Love me, woof!
   components:
   - type: Sprite
     sprite: _Siberia/Clothing/Under/Top/ian.rsi
@@ -40,7 +40,7 @@
 - type: entity
   parent: ClothingUndershirtBase
   id: ClothingUnderTopUk
-  name: UK женский топ
+  name: UK Female Top
   description: DON'T GET STROPPY!!
   components:
   - type: Sprite
@@ -53,7 +53,7 @@
 - type: entity
   parent: ClothingUndershirtBase
   id: ClothingUnderTopNeko
-  name: Неко топик
+  name: Neko Top
   description: NYA~~~!
   components:
   - type: Sprite
@@ -66,8 +66,8 @@
 - type: entity
   parent: ClothingUndershirtBase
   id: ClothingUnderTopWhiteTShirt
-  name: Белая майка
-  description: Белая майка.
+  name: White T-Shirt
+  description: A plain white t-shirt.
   components:
   - type: Sprite
     sprite: _Siberia/Clothing/Under/Top/whitetshirt.rsi
@@ -78,8 +78,8 @@
 - type: entity
   parent: ClothingUndershirtBase
   id: ClothingUnderTopSanta
-  name: Новогодний лифчик
-  description: Праздничный новогодний лифчик.
+  name: Christmas Bra
+  description: A festive Christmas bra.
   components:
   - type: Sprite
     sprite: _Siberia/Clothing/Under/Top/santatop.rsi
@@ -91,8 +91,8 @@
 - type: entity
   parent: ClothingUndershirtBase
   id: ClothingUnderTopTigerFemale
-  name: Тигриный лифчик
-  description: Лифчик с тигриным принтом.
+  name: Tiger Bra
+  description: A tiger-print bra.
   components:
   - type: Sprite
     sprite: _Siberia/Clothing/Under/Top/tigertop.rsi
@@ -104,8 +104,8 @@
 - type: entity
   parent: ClothingUndershirtBase
   id: ClothingUnderTopDisco
-  name: Диско лифчик
-  description: Лифчик в стиле диско.
+  name: Disco Bra
+  description: A disco-style bra.
   components:
   - type: Sprite
     sprite: _Siberia/Clothing/Under/Top/discotop.rsi
@@ -117,8 +117,8 @@
 - type: entity
   parent: ClothingUndershirtBase
   id: ClothingUnderTopPink
-  name: Розовый лифчик
-  description: Розовый лифчик.
+  name: Pink Bra
+  description: A pink bra.
   components:
   - type: Sprite
     sprite: _Siberia/Clothing/Under/Top/pinkTOP.rsi
@@ -129,8 +129,8 @@
 - type: entity
   parent: ClothingUndershirtBase
   id: ClothingUnderTopSyndicate
-  name: Тактический лифчик
-  description: Лифчик в тактическом стиле.
+  name: Tactical Bra
+  description: A tactical-style bra.
   components:
   - type: Sprite
     sprite: _Siberia/Clothing/Under/Top/lacetop.rsi
@@ -142,8 +142,8 @@
 - type: entity
   parent: ClothingUndershirtBase
   id: ClothingUnderTopTactic
-  name: Тёмный лифчик
-  description: Тёмный лифчик.
+  name: Dark Bra
+  description: A dark-colored bra.
   components:
   - type: Sprite
     sprite: _Siberia/Clothing/Under/Top/tactictop.rsi
@@ -155,8 +155,8 @@
 - type: entity
   parent: ClothingUndershirtBase
   id: ClothingUnderTopGalaxy
-  name: Верх от Galaxy
-  description: Топ с галактическим принтом.
+  name: Galaxy Top
+  description: A galaxy-themed top.
   components:
   - type: Sprite
     sprite: _Siberia/Clothing/Under/Top/galaxy.rsi
@@ -168,8 +168,8 @@
 - type: entity
   parent: ClothingUndershirtBase
   id: ClothingBlackPiquantTop
-  name: Чёрный пикантный топик
-  description: Фривольное бельё для тех дам, что желают порадовать своих мужчин.
+  name: Black Piquant Top
+  description: Frivolous lingerie for those who wish to please.
   components:
   - type: Sprite
     sprite: _Siberia/Clothing/Under/Top/piquanttop.rsi
@@ -200,8 +200,8 @@
 - type: entity
   parent: ClothingUndershirtBase
   id: ClothingRedPiquantTop
-  name: Красный пикантный топик
-  description: Фривольное бельё для тех дам, что желают порадовать своих мужчин.
+  name: Red Piquant Top
+  description: Frivolous lingerie for those who wish to please.
   components:
   - type: Sprite
     sprite: _Siberia/Clothing/Under/Top/piquanttop.rsi
@@ -232,8 +232,8 @@
 - type: entity
   parent: ClothingUndershirtBase
   id: ClothingBluePiquantTop
-  name: Синий пикантный топик
-  description: Фривольное бельё для тех дам, что желают порадовать своих мужчин.
+  name: Blue Piquant Top
+  description: Frivolous lingerie for those who wish to please.
   components:
   - type: Sprite
     sprite: _Siberia/Clothing/Under/Top/piquanttop.rsi
@@ -264,8 +264,8 @@
 - type: entity
   parent: ClothingUndershirtBase
   id: ClothingPurplePiquantTop
-  name: Фиолетовый пикантный топик
-  description: Фривольное бельё для тех дам, что желают порадовать своих мужчин.
+  name: Purple Piquant Top
+  description: Frivolous lingerie for those who wish to please.
   components:
   - type: Sprite
     sprite: _Siberia/Clothing/Under/Top/piquanttop.rsi
@@ -296,8 +296,8 @@
 - type: entity
   parent: ClothingUndershirtBase
   id: ClothingOrangePiquantTop
-  name: Оранжевый пикантный топик
-  description: Фривольное бельё для тех дам, что желают порадовать своих мужчин.
+  name: Orange Piquant Top
+  description: Frivolous lingerie for those who wish to please.
   components:
   - type: Sprite
     sprite: _Siberia/Clothing/Under/Top/piquanttop.rsi
@@ -328,8 +328,8 @@
 - type: entity
   parent: ClothingUndershirtBase
   id: ClothingBlackElegantSwimsuitTop
-  name: Чёрный элегантный топик купальника
-  description: Покажи всем красоту своего тела.
+  name: Black Elegant Swimsuit Top
+  description: Show everyone the beauty of your body.
   components:
   - type: Sprite
     sprite: _Siberia/Clothing/Under/Top/elegantswimsuittop.rsi
@@ -356,8 +356,8 @@
 - type: entity
   parent: ClothingUndershirtBase
   id: ClothingRedElegantSwimsuitTop
-  name: Красный элегантный топик купальника
-  description: Покажи всем красоту своего тела.
+  name: Red Elegant Swimsuit Top
+  description: Show everyone the beauty of your body.
   components:
   - type: Sprite
     sprite: _Siberia/Clothing/Under/Top/elegantswimsuittop.rsi
@@ -384,8 +384,8 @@
 - type: entity
   parent: ClothingUndershirtBase
   id: ClothingGreenElegantSwimsuitTop
-  name: Зелёный элегантный топик купальника
-  description: Покажи всем красоту своего тела.
+  name: Green Elegant Swimsuit Top
+  description: Show everyone the beauty of your body.
   components:
   - type: Sprite
     sprite: _Siberia/Clothing/Under/Top/elegantswimsuittop.rsi
@@ -412,8 +412,8 @@
 - type: entity
   parent: ClothingUndershirtBase
   id: ClothingBlueElegantSwimsuitTop
-  name: Синий элегантный топик купальника
-  description: Покажи всем красоту своего тела.
+  name: Blue Elegant Swimsuit Top
+  description: Show everyone the beauty of your body.
   components:
   - type: Sprite
     sprite: _Siberia/Clothing/Under/Top/elegantswimsuittop.rsi
@@ -440,8 +440,8 @@
 - type: entity
   parent: ClothingUndershirtBase
   id: ClothingPurpleElegantSwimsuitTop
-  name: Фиолетовый элегантный топик купальника
-  description: Покажи всем красоту своего тела.
+  name: Purple Elegant Swimsuit Top
+  description: Show everyone the beauty of your body.
   components:
   - type: Sprite
     sprite: _Siberia/Clothing/Under/Top/elegantswimsuittop.rsi
@@ -468,8 +468,8 @@
 - type: entity
   parent: ClothingUndershirtBase
   id: ClothingOrangeElegantSwimsuitTop
-  name: Оранжевый элегантный топик купальника
-  description: Покажи всем красоту своего тела.
+  name: Orange Elegant Swimsuit Top
+  description: Show everyone the beauty of your body.
   components:
   - type: Sprite
     sprite: _Siberia/Clothing/Under/Top/elegantswimsuittop.rsi
@@ -496,8 +496,8 @@
 - type: entity
   parent: ClothingUndershirtBase
   id: ClothingUnderTopAzure
-  name: Лазурный топ купальника
-  description: Синева неба хорошо сочетается с морской гладью.
+  name: Azure Swimsuit Top
+  description: The blue of the sky pairs well with the sea.
   components:
   - type: Sprite
     sprite: _Siberia/Clothing/Under/Top/azuretop.rsi
@@ -517,8 +517,8 @@
 - type: entity
   parent: ClothingUndershirtBase
   id: ClothingUnderTopKitsuneArms
-  name: Элитный топ купальника Kitsune Arms
-  description: Лимитированное нижнее бельё от компании Kitsune Arms для лучших её клиентов.
+  name: Kitsune Arms Elite Swimsuit Top
+  description: Limited lingerie from Kitsune Arms for its best clients.
   components:
   - type: Sprite
     sprite: _Siberia/Clothing/Under/Top/kitsunearmstop.rsi

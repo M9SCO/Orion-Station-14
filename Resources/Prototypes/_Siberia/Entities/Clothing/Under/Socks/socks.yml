@@ -3,8 +3,8 @@
 - type: entity
   parent: ClothingSocksBase
   id: ClothingUnderSocksBlack
-  name: Чёрные носки
-  description: Носки.
+  name: Black Socks
+  description: Socks.
   components:
   - type: Sprite
     sprite: _Siberia/Clothing/Under/Socks/black.rsi
@@ -15,8 +15,8 @@
 - type: entity
   parent: ClothingSocksBase
   id: ClothingUnderSocksBlue
-  name: Синие носки
-  description: Носки.
+  name: Blue Socks
+  description: Socks.
   components:
   - type: Sprite
     sprite: _Siberia/Clothing/Under/Socks/blue.rsi
@@ -27,8 +27,8 @@
 - type: entity
   parent: ClothingSocksBase
   id: ClothingUnderSocksBrown
-  name: Коричневые носки
-  description: Носки.
+  name: Brown Socks
+  description: Socks.
   components:
   - type: Sprite
     sprite: _Siberia/Clothing/Under/Socks/brown.rsi
@@ -39,8 +39,8 @@
 - type: entity
   parent: ClothingSocksBase
   id: ClothingUnderSocksGreen
-  name: Зелёные носки
-  description: Носки.
+  name: Green Socks
+  description: Socks.
   components:
   - type: Sprite
     sprite: _Siberia/Clothing/Under/Socks/green.rsi
@@ -51,8 +51,8 @@
 - type: entity
   parent: ClothingSocksBase
   id: ClothingUnderSocksMime
-  name: Носки мима
-  description: Носки.
+  name: Mime Socks
+  description: Socks.
   components:
   - type: Sprite
     sprite: _Siberia/Clothing/Under/Socks/mime.rsi
@@ -63,8 +63,8 @@
 - type: entity
   parent: ClothingSocksBase
   id: ClothingUnderSocksPink
-  name: Розовые носки
-  description: Маленькое, розовое зло.
+  name: Pink Socks
+  description: A small, pink evil.
   components:
   - type: Sprite
     sprite: _Siberia/Clothing/Under/Socks/pink.rsi
@@ -75,8 +75,8 @@
 - type: entity
   parent: ClothingSocksBase
   id: ClothingUnderSocksPurple
-  name: Фиолетовые носки
-  description: Носки.
+  name: Purple Socks
+  description: Socks.
   components:
   - type: Sprite
     sprite: _Siberia/Clothing/Under/Socks/purple.rsi
@@ -87,8 +87,8 @@
 - type: entity
   parent: ClothingSocksBase
   id: ClothingUnderSocksRed
-  name: Красные носки
-  description: Носки.
+  name: Red Socks
+  description: Socks.
   components:
   - type: Sprite
     sprite: _Siberia/Clothing/Under/Socks/red.rsi
@@ -99,8 +99,8 @@
 - type: entity
   parent: ClothingSocksBase
   id: ClothingUnderSocksWhite
-  name: Белые носки
-  description: Носки.
+  name: White Socks
+  description: Socks.
   components:
   - type: Sprite
     sprite: _Siberia/Clothing/Under/Socks/white.rsi
@@ -113,8 +113,8 @@
 - type: entity
   parent: ClothingSocksBase
   id: ClothingUnderStockingsBlue
-  name: Синие чулки
-  description: Чулки.
+  name: Blue Stockings
+  description: Stockings.
   components:
   - type: Sprite
     sprite: _Siberia/Clothing/Under/Socks/Stockings/blue.rsi
@@ -126,8 +126,8 @@
 - type: entity
   parent: ClothingSocksBase
   id: ClothingUnderStockingsBrown
-  name: Коричневые чулки
-  description: Чулки.
+  name: Brown Stockings
+  description: Stockings.
   components:
   - type: Sprite
     sprite: _Siberia/Clothing/Under/Socks/Stockings/brown.rsi
@@ -139,8 +139,8 @@
 - type: entity
   parent: ClothingSocksBase
   id: ClothingUnderStockingsFlesh
-  name: Телесные чулки
-  description: Чулки.
+  name: Flesh Stockings
+  description: Stockings.
   components:
   - type: Sprite
     sprite: _Siberia/Clothing/Under/Socks/Stockings/flesh.rsi
@@ -152,8 +152,8 @@
 - type: entity
   parent: ClothingSocksBase
   id: ClothingUnderStockingsGreen
-  name: Зелёные чулки
-  description: Чулки.
+  name: Green Stockings
+  description: Stockings.
   components:
   - type: Sprite
     sprite: _Siberia/Clothing/Under/Socks/Stockings/green.rsi
@@ -165,8 +165,8 @@
 - type: entity
   parent: ClothingSocksBase
   id: ClothingUnderStockingsMesh
-  name: Сетчатые чулки
-  description: Чулки.
+  name: Mesh Stockings
+  description: Stockings.
   components:
   - type: Sprite
     sprite: _Siberia/Clothing/Under/Socks/Stockings/mesh.rsi
@@ -178,8 +178,8 @@
 - type: entity
   parent: ClothingSocksBase
   id: ClothingUnderStockingsRed
-  name: Красные чулки
-  description: Чулки.
+  name: Red Stockings
+  description: Stockings.
   components:
   - type: Sprite
     sprite: _Siberia/Clothing/Under/Socks/Stockings/red.rsi
@@ -191,8 +191,8 @@
 - type: entity
   parent: ClothingSocksBase
   id: ClothingUnderStockingsWhite
-  name: Белые чулки
-  description: Чулки.
+  name: White Stockings
+  description: Stockings.
   components:
   - type: Sprite
     sprite: _Siberia/Clothing/Under/Socks/Stockings/white.rsi
@@ -204,8 +204,8 @@
 - type: entity
   parent: ClothingSocksBase
   id: ClothingUnderStockingsWhiteBlack
-  name: Чулки белые с чёрной полосой
-  description: Чулки.
+  name: White-Black Stockings
+  description: Stockings.
   components:
   - type: Sprite
     sprite: _Siberia/Clothing/Under/Socks/Stockings/white-black.rsi
@@ -219,8 +219,8 @@
 - type: entity
   parent: ClothingSocksBase
   id: ClothingUnderTightsBlack
-  name: Чёрные колготки
-  description: Колготки.
+  name: Black Tights
+  description: Tights.
   components:
   - type: Sprite
     sprite: _Siberia/Clothing/Under/Socks/Tights/black.rsi
@@ -232,8 +232,8 @@
 - type: entity
   parent: ClothingSocksBase
   id: ClothingUnderTightsBlue
-  name: Синие колготки
-  description: Колготки.
+  name: Blue Tights
+  description: Tights.
   components:
   - type: Sprite
     sprite: _Siberia/Clothing/Under/Socks/Tights/blue.rsi
@@ -245,8 +245,8 @@
 - type: entity
   parent: ClothingSocksBase
   id: ClothingUnderTightsBrown
-  name: Коричневые колготки
-  description: Колготки.
+  name: Brown Tights
+  description: Tights.
   components:
   - type: Sprite
     sprite: _Siberia/Clothing/Under/Socks/Tights/brown.rsi
@@ -258,8 +258,8 @@
 - type: entity
   parent: ClothingSocksBase
   id: ClothingUnderTightsFlesh
-  name: Телесные колготки
-  description: Колготки.
+  name: Flesh Tights
+  description: Tights.
   components:
   - type: Sprite
     sprite: _Siberia/Clothing/Under/Socks/Tights/flesh.rsi
@@ -271,8 +271,8 @@
 - type: entity
   parent: ClothingSocksBase
   id: ClothingUnderTightsGreen
-  name: Зелёные колготки
-  description: Колготки.
+  name: Green Tights
+  description: Tights.
   components:
   - type: Sprite
     sprite: _Siberia/Clothing/Under/Socks/Tights/green.rsi
@@ -284,8 +284,8 @@
 - type: entity
   parent: ClothingSocksBase
   id: ClothingUnderTightsRed
-  name: Красные колготки
-  description: Колготки.
+  name: Red Tights
+  description: Tights.
   components:
   - type: Sprite
     sprite: _Siberia/Clothing/Under/Socks/Tights/red.rsi
@@ -297,8 +297,8 @@
 - type: entity
   parent: ClothingSocksBase
   id: ClothingUnderTightsWhite
-  name: Белые колготки
-  description: Колготки.
+  name: White Tights
+  description: Tights.
   components:
   - type: Sprite
     sprite: _Siberia/Clothing/Under/Socks/Tights/white.rsi
@@ -312,8 +312,8 @@
 - type: entity
   parent: ClothingSocksBase
   id: ClothingUnderSocksNeko
-  name: Неко носки
-  description: Носки в стиле неко.
+  name: Neko Socks
+  description: Neko-themed socks.
   components:
   - type: Sprite
     sprite: _Siberia/Clothing/Under/Socks/neko.rsi
@@ -325,8 +325,8 @@
 - type: entity
   parent: ClothingSocksBase
   id: ClothingUnderSocksMegu
-  name: Чулок и бинт
-  description: Странное сочетание чулка и бинта на ногу, кому это нужно?
+  name: Stocking and Bandage
+  description: A strange combination of a stocking and a leg bandage, who even needs this?
   components:
   - type: Sprite
     sprite: _Siberia/Clothing/Under/Socks/meguminsocks.rsi
