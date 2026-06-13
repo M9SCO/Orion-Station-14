@@ -75,8 +75,8 @@ public sealed class SlippingTest : MovementTest
         Assert.That(sys.Slipped, Does.Not.Contain(SEntMan.GetEntity(Player)));
 
         // Walking over the banana slowly does not trigger a slip.
-        await SetKey(EngineKeyFunctions.Walk, BoundKeyState.Down); // Goobstation - Simulate Toggling the Key
-        await SetKey(EngineKeyFunctions.Walk, BoundKeyState.Up); // Goobstation
+    //    await SetKey(EngineKeyFunctions.Walk, BoundKeyState.Down); // Siberia-Edit
+    //    await SetKey(EngineKeyFunctions.Walk, BoundKeyState.Up); // Siberi-Edit
         await Move(DirectionFlag.East, 1f);
         Assert.That(Delta(), Is.LessThan(0.5f));
         Assert.That(sys.Slipped, Does.Not.Contain(SEntMan.GetEntity(Player)));
@@ -85,6 +85,7 @@ public sealed class SlippingTest : MovementTest
         // Moving at normal speeds does trigger a slip.
         await SetKey(EngineKeyFunctions.Walk, BoundKeyState.Down); // solstice is a MAJOR nerd.
         await Move(DirectionFlag.West, 1f);
+        await SetKey(EngineKeyFunctions.Walk, BoundKeyState.Up); // Siberia-Edit
         Assert.That(sys.Slipped, Does.Contain(SEntMan.GetEntity(Player)));
         AssertComp<KnockedDownComponent>(true, Player);
     }
