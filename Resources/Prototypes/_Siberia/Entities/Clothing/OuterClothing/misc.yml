@@ -1,0 +1,65 @@
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ClothingOuterBlueBomber
+  name: синий бомбер
+  description: синий бомбер одной из спортивных команд НТ
+  components:
+  - type: Sprite
+    sprite: _Siberia/Clothing/OuterClothing/Misc/bluebomber.rsi
+  - type: Clothing
+    sprite: _Siberia/Clothing/OuterClothing/Misc/bluebomber.rsi
+
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ClothingOuterCasualUp
+  name: чёрный пиджак
+  components:
+  - type: Sprite
+    sprite: _Siberia/Clothing/OuterClothing/Misc/casualup.rsi
+  - type: Clothing
+    sprite: _Siberia/Clothing/OuterClothing/Misc/casualup.rsi
+
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ClothingOuterRedBomber
+  name: красный бомбер
+  description: красный бомбер одной из спортивных команд НТ
+  components:
+  - type: Sprite
+    sprite: _Siberia/Clothing/OuterClothing/Misc/redbomber.rsi
+  - type: Clothing
+    sprite: _Siberia/Clothing/OuterClothing/Misc/redbomber.rsi
+
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ClothingOuterRedJacket
+  name: красный пиджак
+  components:
+  - type: Sprite
+    sprite: _Siberia/Clothing/OuterClothing/Misc/redjacket.rsi
+  - type: Clothing
+    sprite: _Siberia/Clothing/OuterClothing/Misc/redjacket.rsi
+
+- type: entity
+  parent: ClothingOuterWinterCoatToggleable
+  id: ClothingBlackCape
+  name: чёрная накидка с капюшоном
+  description: Два серпа в комплект не входят.
+  components:
+  - type: Sprite
+    sprite: _Siberia/Clothing/OuterClothing/Misc/blackcape.rsi
+  - type: Clothing
+    sprite: _Siberia/Clothing/OuterClothing/Misc/blackcape.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadBlackCape
+
+- type: entity
+  parent: ClothingHeadHatHoodWinterBase
+  id: ClothingHeadBlackCape
+  categories: [ HideSpawnMenu ]
+  name: капюшон чёрной накидки
+  components:
+  - type: Sprite
+    sprite: _Siberia/Clothing/OuterClothing/Misc/blackcapehelmet.rsi
+  - type: Clothing
+    sprite: _Siberia/Clothing/OuterClothing/Misc/blackcapehelmet.rsi

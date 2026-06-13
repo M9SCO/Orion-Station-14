@@ -1,0 +1,66 @@
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ClothingOuterCoatHyenhSweater
+  name: свитер
+  description: Он колится!
+  components:
+    - type: Sprite
+      sprite: _Siberia/Clothing/OuterClothing/WinterCoats/hyenh.rsi
+    - type: Clothing
+      sprite: _Siberia/Clothing/OuterClothing/WinterCoats/hyenh.rsi
+    - type: TemperatureProtection
+      heatingCoefficient: 0.1
+      coolingCoefficient: 0.1
+
+- type: entity
+  parent: ClothingOuterWinterCoat
+  id: ClothingOuterWinterCoatLong
+  name: длинный зимний плащ
+  description: Теперь защищает от холода ноги!
+  components:
+    - type: Sprite
+      sprite: _Siberia/Clothing/OuterClothing/WinterCoats/long_winter_coat.rsi
+    - type: Clothing
+      sprite: _Siberia/Clothing/OuterClothing/WinterCoats/long_winter_coat.rsi
+
+- type: entity
+  parent: ClothingOuterWinterCoat
+  id: ClothingOuterWinterCoatMantis
+  name: бурятское зимнее пальто
+  description: Выглядит тёплым... Погодите-ка
+  components:
+    - type: Sprite
+      sprite: _Siberia/Clothing/OuterClothing/WinterCoats/mantis_winter_coat.rsi
+    - type: Clothing
+      sprite: _Siberia/Clothing/OuterClothing/WinterCoats/mantis_winter_coat.rsi
+
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: Vatnik
+  name: Старый ватник
+  description: Старый ватник из СССП, изрядно поеденный молью.
+  components:
+  - type: Sprite
+    sprite: _Siberia/Clothing/OuterClothing/WinterCoats/oldvatnik.rsi
+  - type: Clothing
+    sprite: _Siberia/Clothing/OuterClothing/WinterCoats/oldvatnik.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.90
+        Slash: 0.95
+        Piercing: 0.95
+        Heat: 0.95
+  - type: ExplosionResistance
+    damageCoefficient: 0.95
+
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ClothingOuterWinterCoatBlueWinter
+  name: теплая шубка
+  description: Греет тело и душу.
+  components:
+  - type: Sprite
+    sprite: _Siberia/Clothing/OuterClothing/WinterCoats/bluewintercoat.rsi
+  - type: Clothing
+    sprite: _Siberia/Clothing/OuterClothing/WinterCoats/bluewintercoat.rsi

@@ -1,0 +1,10 @@
+- type: entity
+  parent: ClothingHeadHelmetSwat
+  id: ClothingHeadHelmetSwatForces
+  name: защитная каска
+  description: Победа-победа вместо обеда.
+  components:
+  - type: Sprite
+    sprite: _Siberia/Clothing/Head/Helmets/bulletproofhelmet.rsi
+  - type: Clothing
+    sprite: _Siberia/Clothing/Head/Helmets/bulletproofhelmet.rsi

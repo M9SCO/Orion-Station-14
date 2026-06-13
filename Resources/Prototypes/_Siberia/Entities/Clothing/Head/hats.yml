@@ -1,0 +1,153 @@
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadAreopagite
+  name: шляпа охотника на ведьм
+  description: Не защищает от нечисти в виде АВД
+  components:
+  - type: Sprite
+    sprite: _Siberia/Clothing/Head/Hats/areopagite.rsi
+  - type: Clothing
+    sprite: _Siberia/Clothing/Head/Hats/areopagite.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatFezMantis
+  name: бурятская шапка
+  description: У неё что-то сзади... Что это?
+  components:
+  - type: Sprite
+    sprite: _Siberia/Clothing/Head/Hats/mantis_fez.rsi
+  - type: Clothing
+    sprite: _Siberia/Clothing/Head/Hats/mantis_fez.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadBlackFedora
+  name: чёрная федора
+  description: Федора для костюма
+  components:
+  - type: Sprite
+    sprite: _Siberia/Clothing/Head/Hats/blackfedora.rsi
+  - type: Clothing
+    sprite: _Siberia/Clothing/Head/Hats/blackfedora.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadBlackMaido
+  name: чепец горничной
+  description: Запрещено одевать мужчинам
+  components:
+  - type: Sprite
+    sprite: _Siberia/Clothing/Head/Hats/blackmaidohead.rsi
+  - type: Clothing
+    sprite: _Siberia/Clothing/Head/Hats/blackmaidohead.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatBeretQuartm
+  name: берет Квартирмейстера
+  description: Прекрасный берет, точно не напоминающий вам о своём соседе из Службы Безопасности. Впрочем, это не лишает данного берета своей красоты и ощущения спокойствия - одев его лишь раз, вы не захотите его снять.
+  components:
+  - type: Sprite
+    sprite: _Siberia/Clothing/Head/Hats/QMberet.rsi
+  - type: Clothing
+    sprite: _Siberia/Clothing/Head/Hats/QMberet.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingParatrooperberet
+  name: потрёпанный берет
+  description: Старый берет войск СССП. Как его занесло сюда - загадка.
+  components:
+  - type: Sprite
+    sprite: _Siberia/Clothing/Head/Hats/Paratrooper_beret.rsi
+  - type: Clothing
+    sprite: _Siberia/Clothing/Head/Hats/Paratrooper_beret.rsi
+  - type: Tag
+    tags:
+        - HamsterWearable
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatRedRibbon
+  name: красный бант
+  description: До глупости большой бант
+  components:
+  - type: Sprite
+    sprite: _Siberia/Clothing/Head/Hats/redribbon.rsi
+  - type: Clothing
+    sprite: _Siberia/Clothing/Head/Hats/redribbon.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadFurer
+  name: фуражка вождя
+  description: Выглядит одновременно потрясающе и устрашающе.
+  components:
+    - type: Sprite
+      sprite: _Siberia/Clothing/Head/Hats/furerhat.rsi
+    - type: Clothing
+      sprite: _Siberia/Clothing/Head/Hats/furerhat.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatWhiteCap
+  name: белый чепец
+  description: Милый чепец с красной лентой.
+  components:
+  - type: Sprite
+    sprite: _Siberia/Clothing/Head/Hats/flancap.rsi
+  - type: Clothing
+    sprite: _Siberia/Clothing/Head/Hats/flancap.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatCapOfficer
+  name: фуражка офицера
+  description: Красная фуражка, которая подбадривает, заставляет Вас бить первым.
+  components:
+  - type: Sprite
+    sprite: _Siberia/Clothing/Head/Hats/officercap.rsi
+  - type: Clothing
+    sprite: _Siberia/Clothing/Head/Hats/officercap.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatMegu
+  name: алая шляпа
+  description: Шляпа внушающая страх в окружающих.
+  components:
+  - type: Sprite
+    sprite: _Siberia/Clothing/Head/Hats/boomhat.rsi
+  - type: Clothing
+    sprite: _Siberia/Clothing/Head/Hats/boomhat.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatBlackBeret
+  name: чёрный берет
+  components:
+  - type: Sprite
+    sprite: _Siberia/Clothing/Head/Hats/blackberet.rsi
+  - type: Clothing
+    sprite: _Siberia/Clothing/Head/Hats/blackberet.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatWhiteBeret
+  name: белый берет
+  components:
+  - type: Sprite
+    sprite: _Siberia/Clothing/Head/Hats/whiteberet.rsi
+  - type: Clothing
+    sprite: _Siberia/Clothing/Head/Hats/whiteberet.rsi
+
+- type: entity
+  parent: ClothingHeadBaseButcherable
+  id: ClothingHeadhatBandYellow
+  name: жёлтый ободок
+  components:
+  - type: Sprite
+    sprite: _Siberia/Clothing/Head/Hats/headbandyellow.rsi
+  - type: Clothing
+    sprite: _Siberia/Clothing/Head/Hats/headbandyellow.rsi

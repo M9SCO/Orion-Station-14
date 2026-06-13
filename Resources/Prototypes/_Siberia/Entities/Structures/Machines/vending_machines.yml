@@ -1,0 +1,32 @@
+- type: entity
+  parent: VendingMachine
+  id: SiberiaVendingMachineClothing
+  name: вендомат дизайнерской одежды
+  description: нажми на кнопку - получишь результат...
+  components:
+  - type: VendingMachine
+    pack: SibariaClothesMateInventory
+    offState: off
+    brokenState: broken
+    normalState: normal-unshaded
+    denyState: deny-unshaded
+  - type: Advertise
+    pack: ClothesMateAds
+  - type: Speech
+  # - type: Tag
+    # tags:
+      # - DroneUsable
+  - type: Sprite
+    sprite: _Siberia/Structures/Machines/VendingMachines/clothing.rsi
+    layers:
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.Base"]
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
+      shader: unshaded
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: PointLight
+    radius: 1.8
+    energy: 1.6
+    color: "#3db83b"

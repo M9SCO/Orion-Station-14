@@ -1,0 +1,107 @@
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ClothingOuterCoatMantis
+  name: бурятская курта
+  description: Прямиком от туда!
+  components:
+  - type: Sprite
+    sprite: _Siberia/Clothing/OuterClothing/Coats/mantis_jacket.rsi
+  - type: Clothing
+    sprite: _Siberia/Clothing/OuterClothing/Coats/mantis_jacket.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.8
+        Slash: 0.8
+        Piercing: 0.8
+        Heat: 0.8
+  - type: TemperatureProtection
+    heatingCoefficient: 0.3
+    coolingCoefficient: 0.3
+
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ClothingOuterCoatBlackSiberiaCloth
+  name: чёрный пиджак
+  components:
+  - type: Sprite
+    sprite: _Siberia/Clothing/OuterClothing/Coats/black.rsi
+  - type: Clothing
+    sprite: _Siberia/Clothing/OuterClothing/Coats/black.rsi
+
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ClothingOuterCoatWhiteSiberiaCloth
+  name: белоснежный плащ
+  description: На таком даже самое блеклое пятнышко не скроется от вашего взора.
+  components:
+  - type: Sprite
+    sprite: _Siberia/Clothing/OuterClothing/Coats/white.rsi
+  - type: Clothing
+    sprite: _Siberia/Clothing/OuterClothing/Coats/white.rsi
+
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ClothingOuterCoatNeonReb
+  name: стильный неоновый бомбер
+  description: Выглядит так, как будто его носят лишь психи
+  components:
+  - type: Sprite
+    sprite: _Siberia/Clothing/OuterClothing/Coats/neon.rsi
+  - type: Clothing
+    sprite: _Siberia/Clothing/OuterClothing/Coats/neon.rsi
+
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ClothingOuterCoatInspector
+  name: плащ инспектора
+  description: Строгий плащ инспектора, в нём вы будете выглядеть устрашающе при проверках.
+  components:
+  - type: Sprite
+    sprite: _Siberia/Clothing/OuterClothing/Coats/insp_coat.rsi
+  - type: Clothing
+    sprite: _Siberia/Clothing/OuterClothing/Coats/insp_coat.rsi
+
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ClothingOuterCoatUkataRobe
+  name: юката
+  description: Нежная и приятная на ощупь юката, красивый узор и сладкий запах вишни уносят воспоминания к далеким эпохам.
+  components:
+  - type: Sprite
+    sprite: _Siberia/Clothing/OuterClothing/Coats/robe.rsi
+  - type: Clothing
+    sprite: _Siberia/Clothing/OuterClothing/Coats/robe.rsi
+
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ClothingOuterCoatRedPajamas
+  name: пижамная накидка
+  description: Греет тело и душу.
+  components:
+  - type: Sprite
+    sprite: _Siberia/Clothing/OuterClothing/Coats/redpajamas.rsi
+  - type: Clothing
+    sprite: _Siberia/Clothing/OuterClothing/Coats/redpajamas.rsi
+
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ClothingOuterCoatInsulatedCape
+  name: утепленная накидка
+  description: Когда-то согревала воинов от лютого мороза, а теперь пылится у тебя в шкафу.
+  components:
+  - type: Sprite
+    sprite: _Siberia/Clothing/OuterClothing/Coats/insulatedcape.rsi
+  - type: Clothing
+    sprite: _Siberia/Clothing/OuterClothing/Coats/insulatedcape.rsi
+
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ClothingOuterCoatSweaterWithDolphin
+  name: свитер с дельфином
+  description: Уносит в далекое детство.
+  components:
+  - type: Sprite
+    sprite: _Siberia/Clothing/OuterClothing/Coats/sweaterwithdolphin.rsi
+  - type: Clothing
+    sprite: _Siberia/Clothing/OuterClothing/Coats/sweaterwithdolphin.rsi

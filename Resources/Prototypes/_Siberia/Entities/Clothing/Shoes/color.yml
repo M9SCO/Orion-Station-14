@@ -1,0 +1,74 @@
+- type: entity
+  parent: ClothingShoesBaseButcherable
+  id: ClothingShoesColorRedShoes
+  name: красные туфли
+  description: Милые туфельки с белым носком.
+  components:
+  - type: Sprite
+    sprite: _Siberia/Clothing/Shoes/Color/flanboot.rsi
+  - type: Clothing
+    sprite: _Siberia/Clothing/Shoes/Color/flanboot.rsi
+
+- type: entity
+  parent: ClothingShoesBaseButcherable
+  id: ClothingShoesColorGrayGreen
+  name: серо-зелёные кросовки
+  components:
+  - type: Sprite
+    sprite: _Siberia/Clothing/Shoes/Color/graygreenboot.rsi
+  - type: Clothing
+    sprite: _Siberia/Clothing/Shoes/Color/graygreenboot.rsi
+
+- type: entity
+  parent: ClothingShoesBaseButcherable
+  id: ClothingShoesColorPinkBoots
+  name: розовые кросовки
+  components:
+  - type: Sprite
+    sprite: _Siberia/Clothing/Shoes/Color/pinkboots.rsi
+  - type: Clothing
+    sprite: _Siberia/Clothing/Shoes/Color/pinkboots.rsi
+
+- type: entity
+  parent: ClothingShoesBaseButcherable
+  id: ClothingShoesEveningColorRed
+  name: красные вечерние туфли
+  description: Изящные туфли на высоком каблуке для ужина в ресторане. Не вздумайте ходить в них по техническим помещениям с решетчатым настилом!
+  components:
+  - type: Sprite
+    sprite: _Siberia/Clothing/Shoes/Color/Eveningshoes/eveningred.rsi
+  - type: Clothing
+    sprite: _Siberia/Clothing/Shoes/Color/Eveningshoes/eveningred.rsi
+
+- type: entity
+  parent: ClothingShoesBaseButcherable
+  id: ClothingShoesEveningColorGreen
+  name: зеленые вечерние туфли
+  description: Изящные туфли на высоком каблуке для ужина в ресторане. Не вздумайте ходить в них по техническим помещениям с решетчатым настилом!
+  components:
+  - type: Sprite
+    sprite: _Siberia/Clothing/Shoes/Color/Eveningshoes/eveninggreen.rsi
+  - type: Clothing
+    sprite: _Siberia/Clothing/Shoes/Color/Eveningshoes/eveninggreen.rsi
+
+- type: entity
+  parent: ClothingShoesBaseButcherable
+  id: ClothingShoesEveningColorBlue
+  name: синие вечерние туфли
+  description: Изящные туфли на высоком каблуке для ужина в ресторане. Не вздумайте ходить в них по техническим помещениям с решетчатым настилом!
+  components:
+  - type: Sprite
+    sprite: _Siberia/Clothing/Shoes/Color/Eveningshoes/eveningblue.rsi
+  - type: Clothing
+    sprite: _Siberia/Clothing/Shoes/Color/Eveningshoes/eveningblue.rsi
+
+- type: entity
+  parent: ClothingShoesBaseButcherable
+  id: ClothingShoesEveningColorBlack
+  name: черные вечерние туфли
+  description: Изящные туфли на высоком каблуке для ужина в ресторане. Не вздумайте ходить в них по техническим помещениям с решетчатым настилом!
+  components:
+  - type: Sprite
+    sprite: _Siberia/Clothing/Shoes/Color/Eveningshoes/eveningblack.rsi
+  - type: Clothing
+    sprite: _Siberia/Clothing/Shoes/Color/Eveningshoes/eveningblack.rsi

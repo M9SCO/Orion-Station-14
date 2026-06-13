@@ -1,0 +1,24 @@
+- type: entity
+  parent: ClothingEyesBase
+  id: ClothingEyesGlassesPinkMeson
+  name: розовые мезонки
+  description: Этикетка "для девочек".
+  components:
+  - type: Sprite
+    sprite: _Siberia/Clothing/Eyes/Glasses/pinkmeson.rsi
+  - type: Clothing
+    sprite: _Siberia/Clothing/Eyes/Glasses/pinkmeson.rsi
+  - type: VisionCorrection
+  - type: IdentityBlocker
+
+- type: entity
+  parent: ClothingEyesBase
+  id: ClothingEyesGlassesScientistGlasses
+  name: очки
+  description: Наверное, помогут с плохим зрением.
+  components:
+  - type: Sprite
+    sprite: _Siberia/Clothing/Eyes/Glasses/scientistglasses.rsi
+  - type: Clothing
+    sprite: _Siberia/Clothing/Eyes/Glasses/scientistglasses.rsi
+  - type: VisionCorrection

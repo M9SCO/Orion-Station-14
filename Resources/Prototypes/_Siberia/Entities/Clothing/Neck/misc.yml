@@ -1,0 +1,10 @@
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckBread
+  name: хлеб
+  description: Флексит на ветру.
+  components:
+  - type: Sprite
+    sprite: _Siberia/Clothing/Neck/Misc/bread.rsi
+  - type: Clothing
+    sprite: _Siberia/Clothing/Neck/Misc/bread.rsi

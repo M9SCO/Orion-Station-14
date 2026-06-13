@@ -1,0 +1,60 @@
+- type: entity
+  parent: BaseItem
+  id: SiberiaBaseVendingMachineRestock
+  abstract: true
+  name: vending machine restock box
+  description: A box for restocking vending machines with corporate goodies.
+  components:
+  - type: VendingMachineRestock
+  - type: Sprite
+    sprite: Objects/Specific/Service/vending_machine_restock.rsi
+    layers:
+    - state: base
+    - state: green_bit
+      shader: unshaded
+  - type: MeleeWeapon
+    damage:
+      types:
+        Blunt: 5
+    soundHit:
+      path: /Audio/Weapons/genhit2.ogg
+    soundSwing:
+      path: /Audio/Weapons/punchmiss.ogg
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 40
+      behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 20
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Effects/metal_break4.ogg
+      - !type:DumpRestockInventory
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+
+- type: entity
+  parent: SiberiaBaseVendingMachineRestock
+  id: SiberiaVendingMachineRestockClothes
+  name: пополнение дизайнерской одежды
+  description: флексит в руках
+  components:
+    - type: VendingMachineRestock
+      canRestock:
+        - SibariaClothesMateInventory
+    - type: Sprite
+      layers:
+        - state: base
+        - state: green_bit
+          shader: unshaded
+        - state: refill_clothes

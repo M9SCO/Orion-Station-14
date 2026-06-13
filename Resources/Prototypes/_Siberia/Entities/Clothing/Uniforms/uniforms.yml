@@ -1,0 +1,96 @@
+- type: entity
+  parent: ClothingUniformBase
+  id: UniformJabroni
+  name: костюм мастера качалки
+  description: For artists, perfomance artists.
+  components:
+  - type: Sprite
+    sprite: _Siberia/Clothing/Uniforms/Costume/jabroni.rsi
+  - type: Clothing
+    sprite: _Siberia/Clothing/Uniforms/Costume/jabroni.rsi
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: UniformGeisha
+  name: платье Гейши
+  components:
+  - type: Sprite
+    sprite: _Siberia/Clothing/Uniforms/Costume/geisha.rsi
+  - type: Clothing
+    sprite: _Siberia/Clothing/Uniforms/Costume/geisha.rsi
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformJumpskirtNurse
+  name: рубашка медсестры
+  description: Теперь без рукавов!
+  components:
+  - type: Sprite
+    sprite: _Siberia/Clothing/Uniforms/Costume/nurse.rsi
+  - type: Clothing
+    sprite: _Siberia/Clothing/Uniforms/Costume/nurse.rsi
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformMartialGi
+  name: халат
+  description: Просто и понятно. Халат для бани.
+  components:
+  - type: Sprite
+    sprite: _Siberia/Clothing/Uniforms/Costume/gi.rsi
+  - type: Clothing
+    sprite: _Siberia/Clothing/Uniforms/Costume/gi.rsi
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformArc
+  name: длинное фиолетовое платье
+  components:
+  - type: Sprite
+    sprite: _Siberia/Clothing/Uniforms/Costume/arc.rsi
+  - type: Clothing
+    sprite: _Siberia/Clothing/Uniforms/Costume/arc.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformDelovoy
+  name: деловой костюм
+  description: Выглядит потрясающе и богато.
+  components:
+    - type: Sprite
+      sprite: _Siberia/Clothing/Uniforms/Costume/delovoi.rsi
+    - type: Clothing
+      sprite: _Siberia/Clothing/Uniforms/Costume/delovoi.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformFurer
+  name: костюм вождя
+  description: Выглядит потрасаяюще и пугающе.
+  components:
+    - type: Sprite
+      sprite: _Siberia/Clothing/Uniforms/Costume/furer.rsi
+    - type: Clothing
+      sprite: _Siberia/Clothing/Uniforms/Costume/furer.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformKunoichiDress
+  name: платье куноити
+  description: Красивое и впечатляющее.
+  components:
+  - type: Sprite
+    sprite: _Siberia/Clothing/Uniforms/Costume/kunoichidress.rsi
+  - type: Clothing
+    sprite: _Siberia/Clothing/Uniforms/Costume/kunoichidress.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformSkyBlueSet
+  name: небесная одежда
+  description: Бело-голубая мечта.
+  components:
+  - type: Sprite
+    sprite: _Siberia/Clothing/Uniforms/Costume/skyblueset.rsi
+  - type: Clothing
+    sprite: _Siberia/Clothing/Uniforms/Costume/skyblueset.rsi

@@ -1,0 +1,10 @@
+- type: entity
+  parent: ClothingBeltBase
+  id: ClothingBeltMantis
+  name: бурятский пояс
+  description: Идеален для хранения сала
+  components:
+  - type: Sprite
+    sprite: _Siberia/Clothing/Belt/mantis_belt.rsi
+  - type: Clothing
+    sprite: _Siberia/Clothing/Belt/mantis_belt.rsi

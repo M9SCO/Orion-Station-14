@@ -1,0 +1,185 @@
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformMantisJumpskirt
+  name: бурятская юбка
+  description: Прямиком от туда!
+  components:
+    - type: Sprite
+      sprite: _Siberia/Clothing/Uniforms/Jumpskirt/mantis_jumpskirt.rsi
+    - type: Clothing
+      sprite: _Siberia/Clothing/Uniforms/Jumpskirt/mantis_jumpskirt.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformBlackMaidoUpJumpskirt
+  name: чёрное платье горничной
+  description: Часть набора горничной
+  components:
+    - type: Sprite
+      sprite: _Siberia/Clothing/Uniforms/Jumpskirt/blackmaidoup.rsi
+    - type: Clothing
+      sprite: _Siberia/Clothing/Uniforms/Jumpskirt/blackmaidoup.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformBlackMisatoJumpskirt
+  name: чёрная безрукавка
+  components:
+    - type: Sprite
+      sprite: _Siberia/Clothing/Uniforms/Jumpskirt/blackmisato.rsi
+    - type: Clothing
+      sprite: _Siberia/Clothing/Uniforms/Jumpskirt/blackmisato.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJustFunJumpskirt
+  name: униформа galaxy
+  components:
+    - type: Sprite
+      sprite: _Siberia/Clothing/Uniforms/Jumpskirt/justforfun.rsi
+    - type: Clothing
+      sprite: _Siberia/Clothing/Uniforms/Jumpskirt/justforfun.rsi
+
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformNightFormalJumpskirt
+  name: платье элегантной дамы
+  components:
+    - type: Sprite
+      sprite: _Siberia/Clothing/Uniforms/Jumpskirt/nightformal.rsi
+    - type: Clothing
+      sprite: _Siberia/Clothing/Uniforms/Jumpskirt/nightformal.rsi
+
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformNurseMedJumpskirt
+  name: униформа медсестры
+  description: Форма медсестры без рукавов
+  components:
+    - type: Sprite
+      sprite: _Siberia/Clothing/Uniforms/Jumpskirt/nursemed.rsi
+    - type: Clothing
+      sprite: _Siberia/Clothing/Uniforms/Jumpskirt/nursemed.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpskirtRedTopAndDown
+  name: красная юбка и топик
+  description: Удобно для танцев!
+  components:
+  - type: Sprite
+    sprite: _Siberia/Clothing/Uniforms/Jumpskirt/red_new.rsi
+  - type: Clothing
+    sprite: _Siberia/Clothing/Uniforms/Jumpskirt/red_new.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpskirtSuika
+  name: рваная рубашка с фиолетовой юбкой
+  description: Пахнущая саке рубашка без руковов с безвкусной юбкой
+  components:
+  - type: Sprite
+    sprite: _Siberia/Clothing/Uniforms/Jumpskirt/suikasuit.rsi
+  - type: Clothing
+    sprite: _Siberia/Clothing/Uniforms/Jumpskirt/suikasuit.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingEveningDressBlueJumpskirt
+  name: синее вечернее платье
+  description: Наконец то вечернее платье, а не юбка.
+  components:
+  - type: Sprite
+    sprite: _Siberia/Clothing/Uniforms/Jumpskirt/blue_dress.rsi
+  - type: Clothing
+    sprite: _Siberia/Clothing/Uniforms/Jumpskirt/blue_dress.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingEveningDressRedJumpskirt
+  name: красное вечернее платье
+  description: Яркое вечернее платье подчеркивающее ваши достоинства.
+  components:
+  - type: Sprite
+    sprite: _Siberia/Clothing/Uniforms/Jumpskirt/red_dress.rsi
+  - type: Clothing
+    sprite: _Siberia/Clothing/Uniforms/Jumpskirt/red_dress.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingEveningDressGreenJumpskirt
+  name: зеленое вечернее платье
+  description: В этом вечернем платье можно подобраться к дионам очень близко.
+  components:
+  - type: Sprite
+    sprite: _Siberia/Clothing/Uniforms/Jumpskirt/green_dress.rsi
+  - type: Clothing
+    sprite: _Siberia/Clothing/Uniforms/Jumpskirt/green_dress.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpskirtFlan
+  name: красное платье
+  description: Милое красное платье с оборкамии большим бантом на спине.
+  components:
+  - type: Sprite
+    sprite: _Siberia/Clothing/Uniforms/Jumpskirt/flanskirt.rsi
+  - type: Clothing
+    sprite: _Siberia/Clothing/Uniforms/Jumpskirt/flanskirt.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpskirtMegu
+  name: алое платье
+  description: Алое платье с длинным рукавом, кого-то вам напоминает.
+  components:
+  - type: Sprite
+    sprite: _Siberia/Clothing/Uniforms/Jumpskirt/meguminskirt.rsi
+  - type: Clothing
+    sprite: _Siberia/Clothing/Uniforms/Jumpskirt/meguminskirt.rsi
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformJumpskirtNeatDress
+  name: аккуратное платье
+  description: Выглядит элегантно!
+  components:
+  - type: Sprite
+    sprite: _Siberia/Clothing/Uniforms/Jumpskirt/neatdress.rsi
+  - type: Clothing
+    sprite: _Siberia/Clothing/Uniforms/Jumpskirt/neatdresss.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpskirtHotTop
+  name: горячий прикид
+  description: Вот это женщина...
+  components:
+  - type: Sprite
+    sprite: _Siberia/Clothing/Uniforms/Jumpskirt/hottop.rsi
+  - type: Clothing
+    sprite: _Siberia/Clothing/Uniforms/Jumpskirt/hottop.rsi
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingEveningDress
+  name: выходное платье
+  description: Вечернее платье 2XL.
+  components:
+  - type: Sprite
+    sprite: _Siberia/Clothing/Uniforms/Jumpskirt/eveningdress.rsi
+  - type: Clothing
+    sprite: _Siberia/Clothing/Uniforms/Jumpskirt/eveningdress.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformBlackCorset
+  name: чёрный корсет
+  description: Ты думаешь, что у тебя выйдет лучше без меня...
+  components:
+  - type: Sprite
+    sprite: _Siberia/Clothing/Uniforms/Jumpskirt/blackcorset.rsi
+  - type: Clothing
+    sprite: _Siberia/Clothing/Uniforms/Jumpskirt/blackcorset.rsi
