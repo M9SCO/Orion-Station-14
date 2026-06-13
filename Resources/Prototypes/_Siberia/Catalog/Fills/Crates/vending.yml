@@ -1,0 +1,10 @@
+- type: entity
+  id: CrateVendingMachineRestockSiberiaClothingFilled
+  parent: CratePlastic
+  name: ящик пополнения дизайнерской одежды
+  description: Содержит два набора пополнения вендомата дизайнерской одежды.
+  components:
+    - type: StorageFill
+      contents:
+      - id: SiberiaVendingMachineRestockClothes
+      - id: SiberiaVendingMachineRestockClothes

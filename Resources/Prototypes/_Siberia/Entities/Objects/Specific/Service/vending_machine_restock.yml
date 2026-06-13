@@ -47,7 +47,7 @@
   parent: SiberiaBaseVendingMachineRestock
   id: SiberiaVendingMachineRestockClothes
   name: пополнение дизайнерской одежды
-  description: флексит в руках
+  description: Флексит в руках.
   components:
     - type: VendingMachineRestock
       canRestock:
