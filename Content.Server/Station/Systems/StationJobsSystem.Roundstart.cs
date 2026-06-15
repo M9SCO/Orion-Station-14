@@ -23,6 +23,7 @@
 using System.Linq;
 using Content.Server.Administration.Managers;
 using Content.Server.Antag;
+using Content.Server.Siberia.Sponsors;
 using Content.Server.Station.Components;
 using Content.Server.Station.Events;
 using Content.Shared.Preferences;
@@ -40,6 +41,7 @@ public sealed partial class StationJobsSystem
     [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
     [Dependency] private readonly IBanManager _banManager = default!;
     [Dependency] private readonly AntagSelectionSystem _antag = default!;
+    [Dependency] private readonly SponsorsManager _sponsorsManager = default!; // Siberia
 
     private Dictionary<int, HashSet<string>> _jobsByWeight = default!;
     private List<int> _orderedWeights = default!;
@@ -267,8 +269,16 @@ public sealed partial class StationJobsSystem
                             if (!jobPlayerOptions.ContainsKey(job))
                                 continue;
 
+                            // Siberia-Edit-Start
                             // Picking players it finds that have the job set.
-                            var player = _random.Pick(jobPlayerOptions[job]);
+                            // Sponsors with RolePriority are preferred over regular players.
+                            var jobCandidates = jobPlayerOptions[job];
+                            var sponsorCandidates = jobCandidates.Where(p =>
+                                _sponsorsManager.TryGetInfo(p, out var s) && s.RolePriority).ToList();
+                            var player = sponsorCandidates.Count > 0
+                                ? _random.Pick(sponsorCandidates)
+                                : _random.Pick(jobCandidates);
+                            // Siberia-Edit-End
                             AssignPlayer(player, job, station);
                             stationShares[station]--;
 

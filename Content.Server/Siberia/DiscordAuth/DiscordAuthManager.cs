@@ -1,0 +1,126 @@
+using System.Diagnostics.CodeAnalysis;
+using System.Net;
+using System.Net.Http;
+using System.Net.Http.Json;
+using System.Threading;
+using System.Threading.Tasks;
+using Content.Shared.Siberia;
+using Content.Shared.Siberia.DiscordAuth;
+using JetBrains.Annotations;
+using Robust.Server.Player;
+using Robust.Shared.Configuration;
+using Robust.Shared.Enums;
+using Robust.Shared.Network;
+using Robust.Shared.Player;
+#pragma warning disable CS0618
+
+namespace Content.Server.Siberia.DiscordAuth;
+
+/// <summary>
+///     Manages Discord account linking via external API.
+/// </summary>
+public sealed class DiscordAuthManager
+{
+    [Dependency] private readonly IServerNetManager _netMgr = default!;
+    [Dependency] private readonly IPlayerManager _playerMgr = default!;
+    [Dependency] private readonly IConfigurationManager _cfg = default!;
+
+    private readonly HttpClient _httpClient = new();
+
+    private ISawmill _logger = default!;
+    private string _apiUrl = string.Empty;
+    private string _apiKey = string.Empty;
+
+    private bool _isEnabled;
+
+    /// <summary>
+    ///     Raised when a player passes verification or when the feature is disabled.
+    /// </summary>
+    public event EventHandler<ICommonSession>? PlayerVerified;
+
+    public void Initialize()
+    {
+        _logger = Logger.GetSawmill("discord_auth");
+
+        _cfg.OnValueChanged(SCCVars.DiscordAuthEnabled, v => _isEnabled = v, true);
+        _cfg.OnValueChanged(SCCVars.DiscordAuthApiUrl, v => _apiUrl = v, true);
+        _cfg.OnValueChanged(SCCVars.DiscordAuthApiKey, v => _apiKey = v, true);
+
+        _netMgr.RegisterNetMessage<MsgDiscordAuthRequired>();
+        _netMgr.RegisterNetMessage<MsgDiscordAuthCheck>(OnAuthCheck);
+
+        _playerMgr.PlayerStatusChanged += OnPlayerStatusChanged;
+    }
+
+    private async void OnPlayerStatusChanged(object? sender, SessionStatusEventArgs e)
+    {
+        if (e.NewStatus != SessionStatus.Connected)
+            return;
+
+        if (!_isEnabled)
+        {
+            PlayerVerified?.Invoke(this, e.Session);
+            return;
+        }
+
+        var isVerified = await IsVerified(e.Session.UserId);
+        if (isVerified)
+        {
+            PlayerVerified?.Invoke(this, e.Session);
+            return;
+        }
+
+        var authUrl = await GenerateAuthLink(e.Session.UserId);
+        var msg = new MsgDiscordAuthRequired() { AuthUrl = authUrl };
+        e.Session.Channel.SendMessage(msg);
+    }
+
+    [SuppressMessage("ReSharper", "MethodSupportsCancellation")]
+    private async Task<string> GenerateAuthLink(NetUserId userId, CancellationToken cancel = default)
+    {
+        _logger.Info($"Player {userId} requested generation Discord verification link");
+
+        var requestUrl = $"{_apiUrl}/{WebUtility.UrlEncode(userId.ToString())}?key={_apiKey}";
+        var response = await _httpClient.PostAsync(requestUrl, null, cancel);
+        if (!response.IsSuccessStatusCode)
+        {
+            var content = await response.Content.ReadAsStringAsync();
+            throw new Exception($"Verification API returned bad status code: {response.StatusCode}\nResponse: {content}");
+        }
+
+        var data = await response.Content.ReadFromJsonAsync<DiscordGenerateLinkResponse>(cancellationToken: cancel);
+        return data!.Url;
+    }
+
+    private async void OnAuthCheck(MsgDiscordAuthCheck message)
+    {
+        var isVerified = await IsVerified(message.MsgChannel.UserId);
+        if (isVerified && _playerMgr.TryGetSessionById(message.MsgChannel.UserId, out var session))
+        {
+            PlayerVerified?.Invoke(this, session);
+        }
+    }
+
+    [SuppressMessage("ReSharper", "MethodSupportsCancellation")]
+    private async Task<bool> IsVerified(NetUserId userId, CancellationToken cancel = default)
+    {
+        _logger.Debug($"Player {userId} check Discord verification");
+
+        var requestUrl = $"{_apiUrl}/{WebUtility.UrlEncode(userId.ToString())}";
+        var response = await _httpClient.GetAsync(requestUrl, cancel);
+        if (!response.IsSuccessStatusCode)
+        {
+            var content = await response.Content.ReadAsStringAsync();
+            throw new Exception($"Verification API returned bad status code: {response.StatusCode}\nResponse: {content}");
+        }
+
+        var data = await response.Content.ReadFromJsonAsync<DiscordAuthInfoResponse>(cancellationToken: cancel);
+        return data!.IsLinked;
+    }
+
+    [UsedImplicitly]
+    private sealed record DiscordAuthInfoResponse(bool IsLinked);
+
+    [UsedImplicitly]
+    private sealed record DiscordGenerateLinkResponse(string Url);
+}

@@ -139,6 +139,8 @@ using Content.Client.Playtime;
 using Content.Client.Radiation.Overlays;
 using Content.Client.Replay;
 using Content.Client.Screenshot;
+using Content.Client.Siberia.DiscordAuth;
+using Content.Client.Siberia.Sponsors;
 using Content.Client.Singularity;
 using Content.Client.Stylesheets;
 using Content.Client.UserInterface;
@@ -194,6 +196,8 @@ namespace Content.Client.Entry
         [Dependency] private readonly IResourceManager _resourceManager = default!;
         [Dependency] private readonly IReplayLoadManager _replayLoad = default!;
         [Dependency] private readonly ILogManager _logManager = default!;
+        [Dependency] private readonly SponsorsManager _sponsorsManager = default!; // Siberia
+        [Dependency] private readonly DiscordAuthManager _discordAuthManager = default!; // Siberia
         [Dependency] private readonly DebugMonitorManager _debugMonitorManager = default!;
         [Dependency] private readonly TitleWindowManager _titleWindowManager = default!;
         [Dependency] private readonly IEntitySystemManager _entitySystemManager = default!;
@@ -302,6 +306,8 @@ namespace Content.Client.Entry
             _userInterfaceManager.SetDefaultTheme("SS14DefaultTheme");
             _userInterfaceManager.SetActiveTheme(_configManager.GetCVar(CVars.InterfaceTheme));
             _documentParsingManager.Initialize();
+            _sponsorsManager.Initialize(); // Siberia
+            _discordAuthManager.Initialize(); // Siberia
             _titleWindowManager.Initialize();
 
             _baseClient.RunLevelChanged += (_, args) =>

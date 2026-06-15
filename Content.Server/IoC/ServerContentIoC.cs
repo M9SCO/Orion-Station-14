@@ -165,6 +165,8 @@
 
 using Content.Server._Goobstation.Antag;
 using Content.Server._Orion.ServerProtection;
+using Content.Server.Siberia.DiscordAuth;
+using Content.Server.Siberia.Sponsors;
 using Content.Server._Orion.ServerProtection.Administration;
 using Content.Server._Orion.ServerProtection.Chat;
 using Content.Server._Orion.ServerProtection.Emoting;
@@ -250,6 +252,10 @@ namespace Content.Server.IoC
             IoCManager.Register<CVarControlManager>();
             IoCManager.Register<LastRolledAntagManager>(); // Goobstation - antag pity
             IoCManager.Register<LinkAccountManager>(); // RMC - Patreon
+            // Siberia-Edit-Start
+            IoCManager.Register<SponsorsManager>();
+            IoCManager.Register<DiscordAuthManager>();
+            // Siberia-Edit-End
             // Orion-Start
             IoCManager.Register<ServerProtectionAuditManager>();
             IoCManager.Register<ServerProtectionPunishmentSystem>();

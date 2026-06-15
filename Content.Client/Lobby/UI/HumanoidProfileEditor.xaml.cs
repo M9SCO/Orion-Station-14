@@ -159,6 +159,8 @@ using System.Numerics;
 using Content.Client._Orion.Lobby.UI;
 using Content.Client._Orion.RichText;
 using Content.Client.Guidebook;
+using Content.Client.Siberia.Sponsors;
+using Content.Shared.Siberia;
 using Content.Client.Humanoid;
 using Content.Client.Lobby.UI.Loadouts;
 using Content.Client.Lobby.UI.Roles;
@@ -1154,7 +1156,31 @@ namespace Content.Client.Lobby.UI
             SpeciesButton.Clear();
             _species.Clear();
 
-            _species.AddRange(_prototypeManager.EnumeratePrototypes<SpeciesPrototype>().Where(o => o.RoundStart));
+            // Siberia-Edit-Start
+            var sponsorsMgr = IoCManager.Resolve<SponsorsManager>();
+            sponsorsMgr.TryGetInfo(out var sponsorInfo);
+            var lockedSpeciesStr = _cfgManager.GetCVar(SCCVars.SponsorLockedSpecies);
+            var lockedSpecies = string.IsNullOrWhiteSpace(lockedSpeciesStr)
+                ? new HashSet<string>()
+                : lockedSpeciesStr.Split(',', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries).ToHashSet();
+
+            _species.AddRange(_prototypeManager.EnumeratePrototypes<SpeciesPrototype>().Where(o =>
+            {
+                if (!o.RoundStart)
+                    return false;
+
+                // If this species is sponsor-locked, check if the player has access.
+                if (lockedSpecies.Contains(o.ID))
+                {
+                    if (sponsorInfo == null)
+                        return false;
+                    if (sponsorInfo.AllowedSpecies.Length > 0 && !sponsorInfo.AllowedSpecies.Contains(o.ID))
+                        return false;
+                }
+
+                return true;
+            }));
+            // Siberia-Edit-End
             var speciesIds = _species.Select(o => o.ID).ToList();
 
             for (var i = 0; i < _species.Count; i++)

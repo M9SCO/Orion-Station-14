@@ -136,6 +136,8 @@
 
 using Content.Server._Goobstation.Antag;
 using Content.Server.Acz;
+using Content.Server.Siberia.DiscordAuth;
+using Content.Server.Siberia.Sponsors;
 using Content.Server.Administration;
 using Content.Server.Administration.Logs;
 using Content.Server.Administration.Managers;
@@ -185,6 +187,8 @@ namespace Content.Server.Entry
         private IWatchlistWebhookManager _watchlistWebhookManager = default!;
         private IConnectionManager? _connectionManager;
         private LastRolledAntagManager? _lastAntagManager; // Goobstation
+        private SponsorsManager? _sponsorsManager; // Siberia
+        private DiscordAuthManager? _discordAuthManager; // Siberia
 
         /// <inheritdoc />
         public override void Init()
@@ -255,6 +259,12 @@ namespace Content.Server.Entry
                 IoCManager.Resolve<PlayerRateLimitManager>().Initialize();
                 _lastAntagManager = IoCManager.Resolve<LastRolledAntagManager>(); // Goobstation
                 _lastAntagManager.Initialize(); // Goobstation
+                // Siberia-Edit-Start
+                _sponsorsManager = IoCManager.Resolve<SponsorsManager>();
+                _sponsorsManager.Initialize();
+                _discordAuthManager = IoCManager.Resolve<DiscordAuthManager>();
+                _discordAuthManager.Initialize();
+                // Siberia-Edit-End
             }
         }
 
