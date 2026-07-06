@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "size": {
+    "x": 64,
+    "y": 64
+  },
+  "states": [
+    {
+      "name": "brute_dead"
+    },
+    {
+      "name": "brute_live",
+      "directions": 4
+    }
+  ]
+}

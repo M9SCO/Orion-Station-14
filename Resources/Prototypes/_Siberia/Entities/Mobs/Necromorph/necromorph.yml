@@ -1,0 +1,456 @@
+# # Hacky for the stress test so don't even consider adding to this
+ - type: entity
+   name: неизвестное существо
+   id: necromorph
+   parent: SimpleSpaceMobBase
+   description: раньше было разумным существом
+   components:
+   - type: Insulated
+   - type: CombatMode
+   - type: InputMover
+   - type: MobMover
+   - type: HTN
+     rootTask:
+       task: XenoCompound
+     blackboard:
+       NavClimb: !type:Bool
+         false     
+       NavInteract: !type:Bool
+         true
+       NavPry: !type:Bool
+         true
+       NavSmash: !type:Bool
+         true
+   - type: Tool
+     speed: 1.5
+     qualities:
+       - Prying
+     useSound:
+       path: /Audio/Items/crowbar.ogg
+   - type: Reactive
+     groups:
+       Flammable: [Touch]
+       Extinguish: [Touch]
+   - type: NpcFactionMember
+     factions:
+     - Xeno
+   - type: Hands
+   - type: Sprite
+     drawdepth: Mobs
+     sprite: _Siberia/Mobs/necromorph/necromorph.rsi
+     layers:
+     - map: ["enum.DamageStateVisualLayers.Base"]
+       state: brutef_chest
+   - type: Physics
+     bodyType: Dynamic
+   - type: Fixtures
+     fixtures:
+       fix1:
+         shape:
+           !type:PhysShapeCircle
+           radius: 0.25
+         density: 1000
+         mask:
+         - MobMask
+         layer:
+         - MobLayer
+   - type: MobState
+     allowedStates:
+     - Alive
+     - Dead
+   - type: MobThresholds
+     thresholds:
+       0: Alive
+       250: Dead
+   - type: Stamina
+     critThreshold: 250
+   - type: Bloodstream
+     bloodReagent: Blood
+     bloodMaxVolume: 450     
+   - type: MeleeWeapon
+     altDisarm: false   
+     hidden: true
+     angle: 0
+     soundHit:
+      collection: AlienClaw
+     animation: WeaponArcBite
+     damage:
+       groups:
+         Brute: 10
+   - type: Appearance
+   - type: DamageStateVisuals
+     rotate: true
+     states:
+       Alive:
+         Base: brutef_chest
+       Critical:
+         Base: brutef_chest_lying
+       Dead:
+         Base: brutef_chest_lying
+   - type: Puller
+   - type: Butcherable
+     butcheringType: Spike
+     spawned:
+     - id: FoodMeat
+       amount: 5
+   - type: GhostRole
+     prob: 0.70
+     allowMovement: true
+     allowSpeech: true
+     makeSentient: true
+     name: некроморф
+     description: Вы некроморф. Убивайте всех, чтобы трупы восстали из мертвых. Добивать раненных запрещено.
+     rules: Антагонист. Добивать раненных запрещено.
+   - type: Muted
+   - type: GhostTakeoverAvailable
+   - type: TypingIndicator
+     proto: alien
+   - type: Temperature
+     heatDamageThreshold: 360
+     coldDamageThreshold: -150
+     currentTemperature: 310.15
+   - type: Tag
+     tags:
+       - CannotSuicide
+       - DoorBumpOpener
+       - FootstepSound
+   - type: NoSlip
+   - type: Perishable #Ummmm the acid kills a lot of the bacteria or something
+     molsPerSecondPerUnitMass: 0.0005
+   - type: Speech
+     speechVerb: LargeMob     
+
+ #- type: entity
+   #name: неизвестное существо
+   #parent: necromorph
+   #id: necromorphspitter
+   #components:
+   #- type: Sprite
+     #drawdepth: Mobs
+     #sprite: /Uploaded/necromorph.rsi
+     #layers:
+     #- map: ["enum.DamageStateVisualLayers.Base"]
+       #state: leaper_running
+   #- type: MobState
+     #allowedStates:
+       #- Alive
+       #- Dead
+   #- type: MobThresholds
+     #thresholds:
+       #0: Alive
+       #150: Dead
+   #- type: MeleeWeapon
+     #damage:
+       #groups:
+         #Brute: 10
+  # - type: DamageStateVisuals
+     #rotate: true
+     #states:
+       #Alive:
+         #Base: leaper_running
+       #Critical:
+         #Base: leaper_dead
+       #Dead:
+         #Base: leaper_dead
+   #- type: Stamina
+     #critThreshold: 200
+   #- type: MovementSpeedModifier
+     #baseWalkSpeed : 5.5
+     #baseSprintSpeed : 3.5
+   #- type: Fixtures
+     #fixtures:
+       #shape:
+         #!type:PhysShapeCircle
+         #radius: 0.45
+       #density: 450
+       #mask:
+       #- MobMask
+       #layer:
+       #- MobLayer
+
+ - type: entity
+   name: неизвестное существо
+   parent: necromorph
+   id: necromorphbruteflesh
+   components:
+   - type: Sprite
+     drawdepth: Mobs
+     sprite: _Siberia/Mobs/necromorph/necroflash.rsi
+     layers:
+     - map: ["enum.DamageStateVisualLayers.Base"]
+       state: brute_live
+   - type: MobState
+     allowedStates:
+       - Alive
+       - Dead
+   - type: MobThresholds
+     thresholds:
+       0: Alive
+       1200: Dead
+   - type: Stamina
+     critThreshold: 2500
+   - type: MovementSpeedModifier
+     baseWalkSpeed : 3.0
+     baseSprintSpeed : 2.0
+   - type: MeleeWeapon
+     hidden: true
+     damage:
+      types:
+        Blunt: 60
+        Structural: 60
+   - type: DamageStateVisuals
+     rotate: true
+     states:
+       Alive:
+         Base: brute_live
+       Critical:
+         Base: brute_dead
+       Dead:
+         Base: brute_dead
+   - type: GhostRole
+     prob: 0.10
+     allowMovement: true
+     allowSpeech: true
+     makeSentient: true
+     name: некроморф
+     description: Вы некроморф. Убивайте всех, чтобы трупы восстали из мертвых. Добивать раненных запрещено.
+     rules: Антагонист. Добивать раненных запрещено.
+   - type: SlowOnDamage
+     speedModifierThresholds:
+       1000: 0.7
+   - type: Fixtures
+     fixtures:
+       fix1:
+         shape:
+           !type:PhysShapeCircle
+           radius: 0.48
+         density: 1000
+         mask:
+         - MobMask
+         layer:
+         - MobLayer
+
+ - type: entity
+   name: неизвестное существо
+   parent: necromorph
+   id: necromorphRunner
+   components:
+   - type: Sprite
+     drawdepth: Mobs
+     sprite: _Siberia/Mobs/necromorph/necromorph.rsi
+     layers:
+     - map: ["enum.DamageStateVisualLayers.Base"]
+       state: leaper_running
+   - type: MobState
+     allowedStates:
+       - Alive
+       - Dead
+   - type: MobThresholds
+     thresholds:
+       0: Alive
+       150: Dead
+   - type: DamageStateVisuals
+     rotate: true
+     states:
+       Alive:
+         Base: leaper_running
+       Critical:
+         Base: leaper_dead
+       Dead:
+         Base: leaper_dead
+   - type: GhostRole
+     prob: 0.80
+     allowMovement: true
+     allowSpeech: true
+     makeSentient: true
+     name: некроморф
+     description: Вы некроморф. Убивайте всех, чтобы трупы восстали из мертвых. Добивать раненных запрещено.
+     rules: Антагонист. Добивать раненных запрещено.
+   - type: Stamina
+     critThreshold: 250
+   - type: MovementSpeedModifier
+     baseWalkSpeed : 5.0
+     baseSprintSpeed : 6.0
+   - type: MeleeWeapon
+     hidden: true
+     damage:
+      groups:
+        Brute: 8
+   - type: Fixtures
+     fixtures:
+       fix1:
+         shape:
+           !type:PhysShapeCircle
+           radius: 0.35
+         density: 235
+         mask:
+         - LargeMobMask
+         layer:
+         - MobLayer        
+         
+ - type: entity
+   id: NecroMarker
+   name: обелиск
+   description: странное чувство вызывает у меня эта штука... я хочу быть единым...
+   placement:
+     mode: SnapgridCenter
+     snap:
+       - Wall
+   components:
+    - type: AmbientSound
+      volume: 0
+      range: 8
+      sound:
+        path: /Audio/Ambience/Objects/gravity_gen_hum.ogg
+    - type: RangedDamageSound
+      soundGroups:
+        Brute:
+          collection:
+            MeatBulletImpact
+      soundTypes:
+        Heat:
+          collection:
+            MeatLaserImpact
+    - type: Timer
+    - type: TimedSpawner
+      prototypes:
+        - necromorph
+        - necromorph
+        - necromorph
+        - necromorphRunner
+        - necromorphRunner
+        - necromorphRunner
+        - necromorphbruteflesh
+      chance: 0.80
+      intervalSeconds: 60
+      minimumEntitiesSpawned: 1
+      maximumEntitiesSpawned: 2
+   # - type: TimedSpawner
+     # prototypes:
+     # - MobXeno
+     # chance: 0.85
+     # intervalSeconds: 30
+     # minimumEntitiesSpawned: 1
+     # maximumEntitiesSpawned: 4
+    - type: Clickable
+    - type: InteractionOutline
+    - type: Sprite
+      netsync: false
+      sprite: _Siberia/Structures/Objects/necromarker.rsi
+      layers:
+        - state: on
+        # - state: wardingtower-unshaded
+          # shader: unshaded
+    - type: Damageable
+      damageContainer: Inorganic
+      damageModifierSet: Metallic
+    - type: Transform
+      anchored: false
+      noRot: true
+    - type: Physics
+      bodyType: Static
+    - type: Anchorable
+    - type: Pullable
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeAabb
+            bounds: "-0.5,-1.5,0.5,1.5"
+          density: 1000
+          mask:
+          - LargeMobMask
+          layer:
+          - WallLayer
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 50000
+          behaviors:
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+    - type: PointLight
+      radius: 4
+      energy: 2
+      castShadows: false
+      color: "#A30707FF"
+    - type: StaticPrice
+      price: 500000
+      
+ - type: entity
+   parent: NecroMarker
+   id: NecroMarkerCreated
+   name: рукотворный обелиск
+   description: странное чувство вызывает у меня эта штука... я хочу быть единым...
+   suffix: "слабые мобы"
+   components:
+    - type: AmbientSound
+      volume: 0
+      range: 8
+      sound:
+        path: /Audio/Ambience/Objects/gravity_gen_hum.ogg
+    - type: TimedSpawner
+      prototypes:
+        - necromorph
+        - necromorphRunner
+      chance: 0.80
+      intervalSeconds: 60
+      minimumEntitiesSpawned: 1
+      maximumEntitiesSpawned: 2
+    - type: Sprite
+      netsync: false
+      sprite: _Siberia/Structures/Objects/necromarker.rsi
+      scale: 0.6, 0.6
+      layers:
+        - state: created
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 5000
+          behaviors:
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]  
+              
+ - type: entity
+   parent: MarkerBase
+   id: SpawnMobBaseNecro
+   name: Спавнер базового некроморфа
+   components:
+   - type: Sprite
+     sprite: _Siberia/Mobs/necromorph/necromorph.rsi
+     layers:
+     - state: brutef_chest_lying
+       sprite: _Siberia/Mobs/necromorph/necromorph.rsi
+   - type: ConditionalSpawner
+     prototypes:
+     - necromorph
+     
+ - type: entity
+   parent: MarkerBase
+   id: SpawnMobRunninNecro
+   name: Спавнер быстрого некроморфа
+   components:
+   - type: Sprite
+     sprite: _Siberia/Mobs/necromorph/necromorph.rsi
+     layers:
+     - state: leaper_dead
+       sprite: _Siberia/Mobs/necromorph/necromorph.rsi
+   - type: ConditionalSpawner
+     prototypes:
+     - necromorphRunner
+    
+ - type: entity
+   parent: MarkerBase
+   id: SpawnMobFlashNecro
+   name: Спавнер Гиганта некроморфа
+   components:
+   - type: Sprite
+     sprite: _Siberia/Mobs/necromorph/necroflash.rsi
+     layers:
+     - state: brute_dead
+       sprite: _Siberia/Mobs/necromorph/necroflash.rsi
+   - type: ConditionalSpawner
+     prototypes:
+     - necromorphbruteflesh
