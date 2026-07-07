@@ -78,9 +78,9 @@
       collection: AlienClaw
      animation: WeaponArcBite
      damage:
-       groups:
-         Brute: 10
-         Structural: 6
+      types:
+        Slash: 10
+        Structural: 6
    - type: Appearance
    - type: DamageStateVisuals
      states:
@@ -275,8 +275,8 @@
    - type: MeleeWeapon
      hidden: true
      damage:
-      groups:
-        Brute: 8
+      types:
+        Slash: 8
         Structural: 4
    - type: Fixtures
      fixtures:
