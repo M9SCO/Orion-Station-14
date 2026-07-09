@@ -1,0 +1,41 @@
+- type: guideEntry
+  id: SpaceLaw
+  name: guide-entry-space-law
+  priority: 1
+  text: "/ServerInfo/_Siberia/Guidebook/SpaceLaw/SpaceLawIntro.xml"
+  children:
+    - SpaceLaw_1xx
+    - SpaceLaw_2xx
+    - SpaceLaw_3xx
+    - SpaceLaw_4xx
+    - Procedures
+
+- type: guideEntry
+  id: Procedures
+  name: guide-entry-space-law-laws-procedures
+  priority: 5
+  text: "/ServerInfo/_Siberia/Guidebook/SpaceLaw/Procedures.xml"
+
+- type: guideEntry
+  id: SpaceLaw_1xx
+  name: guide-entry-space-law-1xx
+  priority: 1
+  text: "/ServerInfo/_Siberia/Guidebook/SpaceLaw/Laws/Laws-1xx.xml"
+
+- type: guideEntry
+  id: SpaceLaw_2xx
+  name: guide-entry-space-law-2xx
+  priority: 2
+  text: "/ServerInfo/_Siberia/Guidebook/SpaceLaw/Laws/Laws-2xx.xml"
+
+- type: guideEntry
+  id: SpaceLaw_3xx
+  name: guide-entry-space-law-3xx
+  priority: 3
+  text: "/ServerInfo/_Siberia/Guidebook/SpaceLaw/Laws/Laws-3xx.xml"
+
+- type: guideEntry
+  id: SpaceLaw_4xx
+  name: guide-entry-space-law-4xx
+  priority: 4
+  text: "/ServerInfo/_Siberia/Guidebook/SpaceLaw/Laws/Laws-4xx.xml"
