@@ -1,0 +1,68 @@
+# СБ, ШЕЯ (ПОГОНЫ)
+
+- type: loadoutGroup
+  id: SecurityCadetNeck
+  name: Кадет СБ, шея
+  minLimit: 1
+  loadouts:
+  - CadetShoulderMarksPrivate
+  - CadetShoulderMarksCapral
+  - CadetShoulderMarksSergeant
+  - Bodycam # Goobstation - Body cameras
+  - SecurityScarfRed # Orion
+  - ClothingNeckCWPSec
+  - ClothingNeckMantleVeteranSecurity
+
+- type: loadoutGroup
+  id: SecurityOfficerNeck
+  name: Офицер СБ, шея
+  minLimit: 1
+  loadouts:
+  - OfficerShoulderMarksOfficer
+  - OfficerShoulderMarksChiefOfficer
+  - OfficerShoulderMarksJuniorLieutenant
+  - Bodycam # Goobstation - Body cameras
+  - SecurityScarfRed # Orion
+  - ClothingNeckCWPSec
+  - ClothingNeckMantleVeteranSecurity
+
+- type: loadoutGroup
+  id: SecurityBrigmedicNeck
+  name: Бригмедик СБ, шея
+  minLimit: 1
+  loadouts:
+  - BrigmedicShoulderMarksOfficer
+  - BrigmedicShoulderMarksChiefOfficer
+  - BrigmedicShoulderMarksJuniorLieutenant
+  - Bodycam # Goobstation - Body cameras
+  - SecurityScarfRed # Orion
+  - ClothingNeckCWPSec
+  - ClothingNeckMantleVeteranSecurity
+
+- type: loadoutGroup
+  id: SecurityWardenNeck
+  name: Смотритель СБ, шея
+  minLimit: 1
+  loadouts:
+  - WardenShoulderMarksAltLieutenant
+  - WardenShoulderMarksAltChiefLieutenant
+  - WardenShoulderMarksAltCaptain
+  - Bodycam # Goobstation - Body cameras
+  - SecurityScarfRed # Orion
+  - ClothingNeckCWPSec
+  - ClothingNeckMantleVeteranSecurity
+
+- type: loadoutGroup
+  id: HoSNeck
+  name: Глава СБ, шея
+  minLimit: 1
+  loadouts:
+  - HoSShoulderMarksAltMajor
+  - HoSShoulderMarksAltLieutenantColonel
+  - HoSShoulderMarksAltColonel
+  - HeadofSecurityCloak
+  - HeadofSecurityMantle
+  - HeadOfSecurityRoyalCloak # Orion
+  - SecurityScarfRed # Orion
+  - Bodycam # Goobstation - Body cameras
+  - HeadOfSecurityEnsemble # goob

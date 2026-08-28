@@ -735,7 +735,7 @@
   id: JobHeadOfSecurity
   groups:
   - HeadofSecurityHead
-  - HeadofSecurityNeck
+  - HoSNeck # Vaqm edit
   - HeadofSecurityJumpsuit
   - SecurityBackpack
   - SecurityGunHos # Orion
@@ -768,7 +768,7 @@
   - SecurityBackpack
   - SecurityGun # Orion
   - SecurityMelee # Goobstation
-  - SecurityNeck
+  - SecurityWardenNeck # Vaqm edit
   - SecurityBelt
   - WardenOuterClothing
   - SecurityShoes
@@ -798,7 +798,7 @@
   - SecurityMelee # Goobstation
   - SecurityOuterClothing
   - SecurityShoes
-  - SecurityNeck
+  - SecurityOfficerNeck # Vaqm edit
   - SecurityPDA
   - SecurityBelt
   - SurvivalSecurity
@@ -850,7 +850,7 @@
   - SecurityBackpack
   - SecurityMelee # Goobstation
   - SurvivalSecurity
-  - SecurityNeck
+  - SecurityCadetNeck # Vaqm edit
   - SecurityOuterClothing # Goobstation - Why not.
   - Trinkets
   - Animals

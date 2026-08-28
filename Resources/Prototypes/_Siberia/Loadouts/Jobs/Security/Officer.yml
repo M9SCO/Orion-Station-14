@@ -1,0 +1,40 @@
+- type: loadoutEffectGroup
+  id: Officer15hrs
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobSecurityOfficer
+      time: 54000 # 15 hrs
+
+- type: loadoutEffectGroup
+  id: Officer25hrs
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobSecurityOfficer
+      time: 90000 # 25 hrs
+
+# Neck
+
+- type: loadout
+  id: OfficerShoulderMarksOfficer # ОФИЦЕР
+  equipment:
+    neck: ShoulderMarksAltOfficer
+
+- type: loadout
+  id: OfficerShoulderMarksChiefOfficer # СТАРШИЙ ОФИЦЕР
+  equipment:
+    neck: ShoulderMarksAltChiefOfficer
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: Officer15hrs
+
+- type: loadout
+  id: OfficerShoulderMarksJuniorLieutenant # МЛАДШИЙ ЛЕЙТЕНАНТ
+  equipment:
+    neck: ShoulderMarksAltJuniorLieutenant
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: Officer25hrs
