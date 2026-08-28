@@ -1,0 +1,40 @@
+- type: loadoutEffectGroup
+  id: Cadet6hrs
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobSecurityCadet
+      time: 21600 # 6 hrs
+
+- type: loadoutEffectGroup
+  id: Cadet15hrs
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobSecurityCadet
+      time: 54000 # 15 hrs
+
+# Neck
+
+- type: loadout
+  id: CadetShoulderMarksPrivate # РЯДОВОЙ
+  equipment:
+    neck: ShoulderMarksAltPrivate
+
+- type: loadout
+  id: CadetShoulderMarksCapral # КАПРАЛ
+  equipment:
+    neck: ShoulderMarksAltCapral
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: Cadet6hrs
+
+- type: loadout
+  id: CadetShoulderMarksSergeant # СЕРЖАНТ
+  equipment:
+    neck: ShoulderMarksAltSergeant
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: Cadet15hrs

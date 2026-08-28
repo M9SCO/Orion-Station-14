@@ -1,0 +1,40 @@
+- type: loadoutEffectGroup
+  id: HoS50hrs
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobHeadOfSecurity
+      time: 180000 # 50 hrs
+
+- type: loadoutEffectGroup
+  id: HoS100hrs
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobHeadOfSecurity
+      time: 360000 # 100 hrs
+
+# Neck
+
+- type: loadout
+  id: HoSShoulderMarksAltMajor # МАЙОР
+  equipment:
+    neck: ShoulderMarksAltMajor
+
+- type: loadout
+  id: HoSShoulderMarksAltLieutenantColonel # ПОДПОЛКОВНИК
+  equipment:
+    neck: ShoulderMarksAltLieutenantColonel
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: HoS50hrs
+
+- type: loadout
+  id: HoSShoulderMarksAltColonel # ПОЛКОВНИК
+  equipment:
+    neck: ShoulderMarksAltColonel
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: HoS100hrs

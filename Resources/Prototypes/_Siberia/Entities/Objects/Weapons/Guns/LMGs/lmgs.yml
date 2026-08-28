@@ -1,0 +1,84 @@
+- type: entity
+  parent: [BaseWeaponLightMachineGun, BaseMajorContraband]
+  id: WeaponLightMachineGunMG34
+  name: MG34
+  description: Древний пулемёт, прозванный в народе "циркулярка художника" за его лютую скорострельность. Крайне тяжелый, комфортно использовать его можно только поставив на сошки.
+  components:
+  - type: Sprite
+    sprite: _Siberia/Objects/Guns/LMGs/MG34/big.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _Siberia/Objects/Guns/LMGs/MG34/tiny.rsi
+    quickEquip: false
+    slots:
+    - Back
+    - suitStorage
+  - type: Item
+    sprite: _Siberia/Objects/Guns/LMGs/MG34/tiny.rsi
+  - type: GunWieldBonus
+    minAngle: -30
+    maxAngle: -70
+  - type: UseDelay
+    delay: 3
+  - type: Gun
+    angleDecay: 8
+    angleIncrease: 1.65
+    minAngle: 37
+    maxAngle: 89
+    cameraRecoilScalar: 10
+    fireRate: 20
+    projectileSpeed: 30
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/smg.ogg
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        startingItem: MagazineLightMachineGunMG34
+        insertSound: /Audio/_Orion/Weapons/Guns/Rifles/ak47_reload.ogg
+        ejectSound: /Audio/_Orion/Weapons/Guns/Rifles/ak47_unload.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazineLightMachineGunMG34
+      gun_chamber:
+        startingItem: CartridgeRifle762
+        priority: 1
+        whitelist:
+          tags:
+            - CartridgeRifle762
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: true
+  - type: Appearance
+  - type: HeldSpeedModifier
+    sprintModifier: 0.2
+    walkModifier: 0.3
+
+#магазин
+- type: entity
+  parent: BaseMagazineHeavyRifle762
+  id: MagazineLightMachineGunMG34
+  name: барабанный магазин для MG34 (7.62мм винтовочный)
+  components:
+  - type: Tag
+    tags:
+      - MagazineLightMachineGunMG34
+  - type: BallisticAmmoProvider
+    proto: CartridgeRifle762
+    whitelist:
+      tags:
+        - CartridgeRifle762
+    capacity: 75
+  - type: Sprite
+    sprite: _Siberia/Objects/Guns/Ammunition/Magazines/Heavy/MG34.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+

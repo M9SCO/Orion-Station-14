@@ -106,6 +106,8 @@
       - Feroxi
       - Felinid
       - Chitinid
+      - Moth
+      - Tajaran
   startingGear: SecurityOfficerGear
   icon: "JobIconSecurityOfficer"
   supervisors: job-supervisors-hos

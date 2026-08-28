@@ -145,7 +145,18 @@
     - map: [ "enum.WiresVisualLayers.MaintenancePanel" ]
       state: generic_panel_open
   - type: FireControlConsole
+# Vaqm edit start
+  - type: ActivatableUiUserWhitelist
+    whitelist:
+      tags:
+      - CanPilot
+# Vaqm edit end
   - type: ActivatableUI
+# Vaqm edit start
+    singleUser: true
+    requiresComplex: true
+    blockSpectators: true
+# Vaqm edit end
     key: enum.FireControlConsoleUiKey.Key
   - type: UserInterface
     interfaces:
