@@ -37,8 +37,11 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using Content.Server.Database;
+using Content.Server.Siberia.Sponsors;
 using Content.Shared._Orion.CustomGhost;
 using Content.Shared.CCVar;
+using Content.Shared.Humanoid;
+using Content.Shared.Siberia;
 using Content.Shared.Construction.Prototypes;
 using Content.Shared.Preferences;
 using Robust.Server.Player;
@@ -64,6 +67,7 @@ namespace Content.Server.Preferences.Managers
         [Dependency] private readonly ILogManager _log = default!;
         [Dependency] private readonly UserDbDataManager _userDb = default!;
         [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
+        [Dependency] private readonly SponsorsManager _sponsorsManager = default!; // Siberia
 
         // Cache player prefs on the server so we don't need as much async hell related to them.
         private readonly Dictionary<NetUserId, PlayerPrefData> _cachedPlayerPrefs =
@@ -72,6 +76,16 @@ namespace Content.Server.Preferences.Managers
         private ISawmill _sawmill = default!;
 
         private int MaxCharacterSlots => _cfg.GetCVar(CCVars.GameMaxCharacterSlots);
+
+        // Siberia-Edit-Start
+        private int GetMaxCharacterSlots(NetUserId userId)
+        {
+            var baseSlots = MaxCharacterSlots;
+            if (_sponsorsManager.TryGetInfo(userId, out var sponsor))
+                baseSlots += sponsor.ExtraSlots;
+            return baseSlots;
+        }
+        // Siberia-Edit-End
 
         public void Init()
         {
@@ -94,7 +108,7 @@ namespace Content.Server.Preferences.Managers
                 return;
             }
 
-            if (index < 0 || index >= MaxCharacterSlots)
+            if (index < 0 || index >= GetMaxCharacterSlots(userId)) // Siberia
             {
                 return;
             }
@@ -134,11 +148,31 @@ namespace Content.Server.Preferences.Managers
                 return;
             }
 
-            if (slot < 0 || slot >= MaxCharacterSlots)
+            if (slot < 0 || slot >= GetMaxCharacterSlots(userId)) // Siberia
                 return;
 
             var curPrefs = prefsData.Prefs!;
             var session = _playerManager.GetSessionById(userId);
+
+            // Siberia-Edit-Start — validate sponsor-locked species
+            if (profile is HumanoidCharacterProfile humanoidProfile)
+            {
+                var lockedStr = _cfg.GetCVar(SCCVars.SponsorLockedSpecies);
+                if (!string.IsNullOrWhiteSpace(lockedStr))
+                {
+                    var lockedSpecies = lockedStr.Split(',', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries).ToHashSet();
+                    if (lockedSpecies.Contains(humanoidProfile.Species))
+                    {
+                        var hasAccess = _sponsorsManager.TryGetInfo(userId, out var sponsorInfo) &&
+                                        (sponsorInfo.AllowedSpecies.Length == 0 || Array.IndexOf(sponsorInfo.AllowedSpecies, humanoidProfile.Species) >= 0);
+                        if (!hasAccess)
+                        {
+                            profile = humanoidProfile.WithSpecies(SharedHumanoidAppearanceSystem.DefaultSpecies);
+                        }
+                    }
+                }
+            }
+            // Siberia-Edit-End
 
             profile.EnsureValid(session, _dependencies);
 
@@ -189,7 +223,7 @@ namespace Content.Server.Preferences.Managers
                 return;
             }
 
-            if (slot < 0 || slot >= MaxCharacterSlots)
+            if (slot < 0 || slot >= GetMaxCharacterSlots(userId)) // Siberia
             {
                 return;
             }
@@ -327,7 +361,7 @@ namespace Content.Server.Preferences.Managers
             msg.Preferences = prefsData.Prefs;
             msg.Settings = new GameSettings
             {
-                MaxCharacterSlots = MaxCharacterSlots
+                MaxCharacterSlots = GetMaxCharacterSlots(session.UserId) // Siberia
             };
             _netManager.ServerSendMessage(msg, session.Channel);
         }

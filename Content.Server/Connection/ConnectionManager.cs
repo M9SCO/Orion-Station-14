@@ -112,6 +112,7 @@ using Content.Goobstation.Common.CCVar;
 using Content.Server.Administration.Managers;
 using Content.Server.Chat.Managers;
 using Content.Server.Connection.IPIntel;
+using Content.Server.Siberia.Sponsors;
 using Content.Server.Database;
 using Content.Server.GameTicking;
 using Content.Server.Preferences.Managers;
@@ -169,6 +170,7 @@ namespace Content.Server.Connection
         [Dependency] private readonly IChatManager _chatManager = default!;
         [Dependency] private readonly IHttpClientHolder _http = default!;
         [Dependency] private readonly IAdminManager _adminManager = default!;
+        [Dependency] private readonly SponsorsManager _sponsorsManager = default!; // Siberia
 
         private ISawmill _sawmill = default!;
         private readonly Dictionary<NetUserId, TimeSpan> _temporaryBypasses = [];
@@ -480,7 +482,11 @@ namespace Content.Server.Connection
             var ticker = IoCManager.Resolve<IEntityManager>().System<GameTicker>();
             var wasInGame = ticker.PlayerGameStatuses.TryGetValue(userId, out var status) &&
                             status == PlayerGameStatus.JoinedGame;
-            return isAdmin || wasInGame;
+
+            // Siberia-Edit-Start
+            var isSponsorPriority = _sponsorsManager.TryGetInfo(userId, out var sponsor) && sponsor.HavePriorityJoin;
+            return isAdmin || wasInGame || isSponsorPriority;
+            // Siberia-Edit-End
         }
     }
 }

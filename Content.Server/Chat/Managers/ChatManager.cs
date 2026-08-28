@@ -183,6 +183,7 @@ using System.Linq;
 using System.Runtime.InteropServices;
 using Content.Server._Orion.ServerProtection.Chat;
 using Content.Server._RMC14.LinkAccount;
+using Content.Server.Siberia.Sponsors;
 using Content.Server.Administration.Logs;
 using Content.Server.Administration.Managers;
 using Content.Server.Administration.Systems;
@@ -229,6 +230,7 @@ internal sealed partial class ChatManager : IChatManager
     [Dependency] private readonly ISharedPlayerManager _player = default!;
     [Dependency] private readonly LinkAccountManager _linkAccount = default!; // RMC - Patreon
     [Dependency] private readonly ChatProtectionSystem _chatProtection = default!; // Orion
+    [Dependency] private readonly SponsorsManager _sponsorsManager = default!; // Siberia
 
     /// <summary>
     /// The maximum length a player-sent message can be sent
@@ -466,6 +468,13 @@ internal sealed partial class ChatManager : IChatManager
                     ("message", FormattedMessage.EscapeText(message)));
             }
         }
+
+        // Siberia-Edit-Start
+        if (colorOverride == null && _sponsorsManager.TryGetInfo(player.UserId, out var sponsorInfo) && sponsorInfo.OOCColor != null)
+        {
+            colorOverride = Color.FromHex(sponsorInfo.OOCColor);
+        }
+        // Siberia-Edit-End
 
         //TODO: player.Name color, this will need to change the structure of the MsgChatMessage
         ChatMessageToAll(ChatChannel.OOC, message, wrappedMessage, EntityUid.Invalid, hideChat: false, recordReplay: true, colorOverride: colorOverride, author: player.UserId);

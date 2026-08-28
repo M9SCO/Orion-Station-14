@@ -1,0 +1,27 @@
+// SPDX-FileCopyrightText: 2026 Space Station 14 Contributors
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
+using System.Diagnostics.CodeAnalysis;
+using Content.Shared.Siberia.Sponsors;
+using Robust.Shared.Network;
+
+namespace Content.Client.Siberia.Sponsors;
+
+public sealed class SponsorsManager
+{
+    [Dependency] private readonly IClientNetManager _netMgr = default!;
+
+    private SponsorInfo? _info;
+
+    public void Initialize()
+    {
+        _netMgr.RegisterNetMessage<MsgSponsorInfo>(msg => _info = msg.Info);
+    }
+
+    public bool TryGetInfo([NotNullWhen(true)] out SponsorInfo? sponsor)
+    {
+        sponsor = _info;
+        return _info != null;
+    }
+}
