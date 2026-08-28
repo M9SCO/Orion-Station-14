@@ -1,0 +1,40 @@
+- type: loadoutEffectGroup
+  id: Warden30hrs
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobWarden
+      time: 108000 # 30 hrs
+
+- type: loadoutEffectGroup
+  id: Warden50hrs
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobWarden
+      time: 180000 # 50 hrs
+
+# Neck
+
+- type: loadout
+  id: WardenShoulderMarksAltLieutenant # ЛЕЙТЕНАНТ
+  equipment:
+    neck: ShoulderMarksAltLieutenant
+
+- type: loadout
+  id: WardenShoulderMarksAltChiefLieutenant # СТАРШИЙ ЛЕЙТЕНАНТ
+  equipment:
+    neck: ShoulderMarksAltChiefLieutenant
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: Warden30hrs
+
+- type: loadout
+  id: WardenShoulderMarksAltCaptain # КАПИТАН
+  equipment:
+    neck: ShoulderMarksAltCaptain
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: Warden50hrs

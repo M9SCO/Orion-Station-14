@@ -1,0 +1,195 @@
+- type: entity
+  parent: Clothing
+  id: ShoulderMarksAltBase
+  abstract: true
+  suffix: СБ, НЕ ID-КАРТЫ
+  name: погоны
+  description: Они показывают ваше звание.
+  components:
+  - type: Sprite
+    sprite: _Orion/Objects/Misc/shoulder_marks.rsi
+  - type: Clothing
+    sprite: _Orion/Objects/Misc/shoulder_marks.rsi
+    quickEquip: true
+    slots:
+    - neck
+  - type: Item
+    heldPrefix: default
+
+- type: entity
+  parent: ShoulderMarksAltBase
+  id: ShoulderMarksAltPrivate
+  name: погоны рядового
+  components:
+  - type: Sprite
+    layers:
+    - state: private
+  - type: Clothing
+    equippedState: equipped-private
+
+- type: entity
+  parent: ShoulderMarksAltBase
+  id: ShoulderMarksAltCapral
+  name: погоны капрала
+  components:
+  - type: Sprite
+    layers:
+    - state: capral
+  - type: Clothing
+    equippedState: equipped-capral
+
+- type: entity
+  parent: ShoulderMarksAltBase
+  id: ShoulderMarksAltSergeant
+  name: погоны сержанта
+  components:
+  - type: Sprite
+    layers:
+    - state: serg
+  - type: Clothing
+    equippedState: equipped-serg
+
+- type: entity
+  parent: ShoulderMarksAltBase
+  id: ShoulderMarksAltOfficer
+  name: погоны офицера
+  components:
+  - type: Sprite
+    layers:
+    - state: unter
+  - type: Clothing
+    equippedState: equipped-unter
+
+- type: entity
+  parent: ShoulderMarksAltBase
+  id: ShoulderMarksAltChiefOfficer
+  name: погоны старшего офицера
+  components:
+  - type: Sprite
+    layers:
+    - state: unter2
+  - type: Clothing
+    equippedState: equipped-unter2
+
+- type: entity
+  parent: ShoulderMarksAltBase
+  id: ShoulderMarksAltJuniorLieutenant
+  name: погоны младшего лейтенанта
+  components:
+  - type: Sprite
+    layers:
+    - state: unter3
+  - type: Clothing
+    equippedState: equipped-unter3
+
+- type: entity
+  parent: ShoulderMarksAltBase
+  id: ShoulderMarksAltLieutenant
+  name: погоны лейтенанта
+  components:
+  - type: Sprite
+    layers:
+    - state: leitenant
+  - type: Clothing
+    equippedState: equipped-leitenant
+
+- type: entity
+  parent: ShoulderMarksAltBase
+  id: ShoulderMarksAltChiefLieutenant
+  name: погоны старшего лейтенанта
+  components:
+  - type: Sprite
+    layers:
+    - state: leitenant2
+  - type: Clothing
+    equippedState: equipped-leitenant2
+
+- type: entity
+  parent: ShoulderMarksAltBase
+  id: ShoulderMarksAltCaptain
+  name: погоны капитана
+  components:
+  - type: Sprite
+    layers:
+    - state: hauptman
+  - type: Clothing
+    equippedState: equipped-hauptman
+
+- type: entity
+  parent: ShoulderMarksAltBase
+  id: ShoulderMarksAltMajor
+  name: погоны майора
+  components:
+  - type: Sprite
+    layers:
+    - state: mayor
+  - type: Clothing
+    equippedState: equipped-mayor
+
+- type: entity
+  parent: ShoulderMarksAltBase
+  id: ShoulderMarksAltLieutenantColonel
+  name: погоны подполковника
+  components:
+  - type: Sprite
+    layers:
+    - state: podpolk
+  - type: Clothing
+    equippedState: equipped-podpolk
+
+- type: entity
+  parent: ShoulderMarksAltBase
+  id: ShoulderMarksAltColonel
+  name: погоны полковника
+  components:
+  - type: Sprite
+    layers:
+    - state: polk
+  - type: Clothing
+    equippedState: equipped-polk
+
+- type: entity
+  parent: ShoulderMarksAltBase
+  id: ShoulderMarksAltGeneralMajor
+  name: погоны генерал-майора
+  components:
+  - type: Sprite
+    layers:
+    - state: generalmayor
+  - type: Clothing
+    equippedState: equipped-generalmayor
+
+- type: entity
+  parent: ShoulderMarksAltBase
+  id: ShoulderMarksAltGeneralLieutenant
+  name: погоны генерал-лейтенанта
+  components:
+  - type: Sprite
+    layers:
+    - state: general
+  - type: Clothing
+    equippedState: equipped-general
+
+- type: entity
+  parent: ShoulderMarksAltBase
+  id: ShoulderMarksAltGeneralColonel
+  name: погоны генерал-полковника
+  components:
+  - type: Sprite
+    layers:
+    - state: generalpolk
+  - type: Clothing
+    equippedState: equipped-generalpolk
+
+- type: entity
+  parent: ShoulderMarksAltBase
+  id: ShoulderMarksAltCaptainHonorary
+  name: почётные погоны капитана
+  description: Они показывают ваш статус... Или уровень ЧСВ.
+  suffix: капитан станции
+  components:
+  - type: Sprite
+    layers:
+    - state: generalpolk
+  - type: Clothing
+    equippedState: equipped-generalpolk

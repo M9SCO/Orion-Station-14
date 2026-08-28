@@ -1,0 +1,68 @@
+# СБ, ШЕЯ (ПОГОНЫ)
+
+- type: loadoutGroup
+  id: SecurityCadetNeck
+  name: loadout-groups-neck-security-cadet-shoulder-marks
+  minLimit: 1
+  loadouts:
+  - CadetShoulderMarksPrivate
+  - CadetShoulderMarksCapral
+  - CadetShoulderMarksSergeant
+  - Bodycam # Goobstation - Body cameras
+  - SecurityScarfRed # Orion
+  - ClothingNeckCWPSec
+  - ClothingNeckMantleVeteranSecurity
+
+- type: loadoutGroup
+  id: SecurityOfficerNeck
+  name: loadout-groups-neck-security-officer-shoulder-marks
+  minLimit: 1
+  loadouts:
+  - OfficerShoulderMarksOfficer
+  - OfficerShoulderMarksChiefOfficer
+  - OfficerShoulderMarksJuniorLieutenant
+  - Bodycam # Goobstation - Body cameras
+  - SecurityScarfRed # Orion
+  - ClothingNeckCWPSec
+  - ClothingNeckMantleVeteranSecurity
+
+- type: loadoutGroup
+  id: SecurityBrigmedicNeck
+  name: loadout-groups-neck-security-brigmedic-shoulder-marks
+  minLimit: 1
+  loadouts:
+  - BrigmedicShoulderMarksOfficer
+  - BrigmedicShoulderMarksChiefOfficer
+  - BrigmedicShoulderMarksJuniorLieutenant
+  - Bodycam # Goobstation - Body cameras
+  - SecurityScarfRed # Orion
+  - ClothingNeckCWPSec
+  - ClothingNeckMantleVeteranSecurity
+
+- type: loadoutGroup
+  id: SecurityWardenNeck
+  name: loadout-groups-neck-security-warden-shoulder-marks
+  minLimit: 1
+  loadouts:
+  - WardenShoulderMarksAltLieutenant
+  - WardenShoulderMarksAltChiefLieutenant
+  - WardenShoulderMarksAltCaptain
+  - Bodycam # Goobstation - Body cameras
+  - SecurityScarfRed # Orion
+  - ClothingNeckCWPSec
+  - ClothingNeckMantleVeteranSecurity
+
+- type: loadoutGroup
+  id: HoSNeck
+  name: loadout-groups-neck-security-HoS-shoulder-marks
+  minLimit: 1
+  loadouts:
+  - HoSShoulderMarksAltMajor
+  - HoSShoulderMarksAltLieutenantColonel
+  - HoSShoulderMarksAltColonel
+  - HeadofSecurityCloak
+  - HeadofSecurityMantle
+  - HeadOfSecurityRoyalCloak # Orion
+  - SecurityScarfRed # Orion
+  - Bodycam # Goobstation - Body cameras
+  - HeadOfSecurityEnsemble # goob

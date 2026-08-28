@@ -1,0 +1,40 @@
+- type: loadoutEffectGroup
+  id: Brigmedic15hrs
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobBrigmedic
+      time: 54000 # 15 hrs
+
+- type: loadoutEffectGroup
+  id: Brigmedic25hrs
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobBrigmedic
+      time: 90000 # 25 hrs
+
+# Neck
+
+- type: loadout
+  id: BrigmedicShoulderMarksOfficer # ОФИЦЕР
+  equipment:
+    neck: ShoulderMarksAltOfficer
+
+- type: loadout
+  id: BrigmedicShoulderMarksChiefOfficer # СТАРШИЙ ОФИЦЕР
+  equipment:
+    neck: ShoulderMarksAltChiefOfficer
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: Brigmedic15hrs
+
+- type: loadout
+  id: BrigmedicShoulderMarksJuniorLieutenant # МЛАДШИЙ ЛЕЙТЕНАНТ
+  equipment:
+    neck: ShoulderMarksAltJuniorLieutenant
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: Brigmedic25hrs
