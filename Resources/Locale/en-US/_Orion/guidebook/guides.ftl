@@ -9,15 +9,6 @@ guide-entry-server-rules-rule-4 = Rule 4
 guide-entry-server-rules-rule-5 = Rule 5
 guide-entry-server-rules-rule-6 = Rule 6
 
-guide-entry-space-law = Space law
-guide-entry-space-law-laws-1xx = Laws (1xx)
-guide-entry-space-law-laws-2xx = Laws (2xx)
-guide-entry-space-law-laws-3xx = Laws (3xx)
-guide-entry-space-law-laws-4xx = Laws (4xx)
-guide-entry-space-law-laws-5xx = Laws (5xx)
-guide-entry-space-law-laws-6xx = Laws (6xx)
-guide-entry-space-law-laws-procedures = Procedures
-
 guide-entry-antagonist = Antagonists
 guide-entry-cortical-borer = Cortical Borer
 
