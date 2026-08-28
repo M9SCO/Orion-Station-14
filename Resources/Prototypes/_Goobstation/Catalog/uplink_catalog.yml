@@ -2094,3 +2094,35 @@
     whitelist:
       tags:
       - ContractorUplink
+
+- type: listing # Siberia
+  id: UplinkWeaponLightMachineGunMG34
+  name: MG34 "Циркулярка художника"
+  description: Древний скорострельный пулемёт. Контролировать отдачу удобно из положения лёжа благодаря интегрированным сошкам. Отлично подходит, чтобы превратить противников в фарш.
+  icon: { sprite: /Textures/_Siberia/Objects/Guns/LMGs/MG34/big.rsi, state: icon }
+  productEntity: WeaponLightMachineGunMG34
+  cost:
+    Telecrystal: 150
+  categories:
+  - UplinkWeaponry
+  conditions:
+  - !type:StoreWhitelistCondition
+    blacklist:
+      tags:
+      - ContractorUplink
+
+- type: listing # Siberia
+  id: UplinkMagazineLightMachineGunMG34
+  name: Барабанный магазин для MG34
+  description: Барабанный магазин на 75 патронов калибра 7.62 для MG34.
+  icon: { sprite: /Textures/_Siberia/Objects/Guns/Ammunition/Magazines/Heavy/MG34.rsi, state: mag-1 }
+  productEntity: MagazineLightMachineGunMG34
+  cost:
+    Telecrystal: 20
+  categories:
+  - UplinkAmmo
+  conditions:
+  - !type:StoreWhitelistCondition
+    blacklist:
+      tags:
+      - ContractorUplink
