@@ -2,7 +2,7 @@
 
 - type: loadoutGroup
   id: SecurityCadetNeck
-  name: Кадет СБ, шея
+  name: loadout-groups-neck-security-cadet-shoulder-marks
   minLimit: 1
   loadouts:
   - CadetShoulderMarksPrivate
@@ -15,7 +15,7 @@
 
 - type: loadoutGroup
   id: SecurityOfficerNeck
-  name: Офицер СБ, шея
+  name: loadout-groups-neck-security-officer-shoulder-marks
   minLimit: 1
   loadouts:
   - OfficerShoulderMarksOfficer
@@ -28,7 +28,7 @@
 
 - type: loadoutGroup
   id: SecurityBrigmedicNeck
-  name: Бригмедик СБ, шея
+  name: loadout-groups-neck-security-brigmedic-shoulder-marks
   minLimit: 1
   loadouts:
   - BrigmedicShoulderMarksOfficer
@@ -41,7 +41,7 @@
 
 - type: loadoutGroup
   id: SecurityWardenNeck
-  name: Смотритель СБ, шея
+  name: loadout-groups-neck-security-warden-shoulder-marks
   minLimit: 1
   loadouts:
   - WardenShoulderMarksAltLieutenant
@@ -54,7 +54,7 @@
 
 - type: loadoutGroup
   id: HoSNeck
-  name: Глава СБ, шея
+  name: loadout-groups-neck-security-HoS-shoulder-marks
   minLimit: 1
   loadouts:
   - HoSShoulderMarksAltMajor
