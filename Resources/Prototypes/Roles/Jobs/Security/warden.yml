@@ -158,6 +158,8 @@
       - Feroxi
       - Felinid
       - Chitinid
+      - Moth
+      - Tajaran
   weight: 5
   startingGear: WardenGear
   icon: "JobIconWarden"

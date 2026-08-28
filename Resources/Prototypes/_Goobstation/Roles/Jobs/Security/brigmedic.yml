@@ -31,6 +31,8 @@
     - Rodentia
     - Shadowkin
     - Chitinid
+    - Moth
+    - Tajaran
   startingGear: BrigmedicGear
   icon: "JobIconBrigmedic"
   supervisors: job-supervisors-hos

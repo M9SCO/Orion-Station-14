@@ -116,6 +116,8 @@
       - Feroxi
       - Felinid
       - Chitinid
+      - Moth
+      - Tajaran
   startingGear: SecurityCadetGear
   icon: "JobIconSecurityCadet"
   supervisors: job-supervisors-security
